@@ -1,14 +1,3 @@
-* {
-  --color-teagreen: #ccd5ae;
-  --color-beige: #e9edc9;
-  --color-cornsilk: #fefae0;
-  --color-papayawhip: #faedcd;
-  --color-buff: #d4a373;
-  --color-taupe: #463F3a;
-  --color-white: #ffff;
-  --color-black: #000000;
-}
-
 .App {
   text-align: center;
 }
@@ -25,18 +14,20 @@
 }
 
 .App-header {
-  background-color: var(--color-cornsilk);
+  background-color: #282c34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: var(--color-black);
+  color: white;
+  
 }
 
 .App-link {
   color: #61dafb;
+  
 }
 
 @keyframes App-logo-spin {
@@ -47,3 +38,4 @@
     transform: rotate(360deg);
   }
 }
+
