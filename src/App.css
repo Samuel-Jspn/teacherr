@@ -1,3 +1,17 @@
+:root {
+  --color-tea: #ccd5ae;
+  --color-light-green: #ccd5ae;
+  --color-light: #fefae0;
+  --color-skin: #faedcd;
+  --color-buff: #d4a373;
+  --color-brown: #8b4513;
+  --color-dark-brown: #463f3a;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 .App {
   text-align: center;
 }

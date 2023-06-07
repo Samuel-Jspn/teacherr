@@ -6,11 +6,19 @@ body {
   gap: 3rem;
   margin: 0;
 
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  background-color: #c8dce7;
+  background-color: #fefae0;
+
+  --color-tea: #ccd5ae;
+  --color-light-green: #ccd5ae;
+  --color-light: #fefae0;
+  --color-skin: #faedcd;
+  --color-buff: #d4a373;
+  --color-brown: #8b4513;
+  --color-dark-brown: #463f3a;
 }
 
 .Teacherr {
@@ -18,7 +26,8 @@ body {
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
 }
 
 /*# sourceMappingURL=index.css.map */
