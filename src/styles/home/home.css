@@ -126,3 +126,28 @@ screen a {
     position: relative;
     width: fit-content;
 }
+
+.block {
+    background-color: white;
+    width: 800px;
+    border-radius: 15px;
+}
+
+.title {
+    font-size: 20px;
+}
+
+.button {
+    float:right;
+    border: none;
+    background: none;
+    font-family: "Montserrat", sans-serif;
+    position: absolute;
+    top: 50%;
+    right: 20%;
+    transform: translate(-50%, -50%);
+}
+
+form > div {
+    margin: 15px;
+}
