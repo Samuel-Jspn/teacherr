@@ -1,6 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "../styles/connection/connection.css";
+import { FaEnvelope } from 'react-icons/fa';
+import { FaLock } from 'react-icons/fa';
+import { FaArrowRight } from 'react-icons/fa';
+import { MdOutlineGesture } from 'react-icons/md';
 
 function connectionPage() {
   return (
@@ -10,16 +14,17 @@ function connectionPage() {
           <h1 className="titre">Connexion</h1>
           <div className="ChampRenseignemants">
             <input type="email" placeholder="Adresse email" />
-            <i className="bx bxs-envelope"></i>
+            <FaEnvelope/>
+            
           </div>
           <div className="ChampRenseignemants">
             <input type="password" placeholder="Mot de passe" />
-            <i className="bx bxs-lock-alt"></i>
+            <FaLock/>
           </div>
           <button className="connection">
             <div className="connexion">
               <p>Je me connecte</p>
-              <i className="bx bx-right-arrow-alt"></i>
+              <FaArrowRight/>
             </div>
           </button>
           <Link to="/inscription">
