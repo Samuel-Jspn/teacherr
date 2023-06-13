@@ -1,4 +1,4 @@
-(src/logo.svg)
+![logo](/src/logo.svg)
 
 # Documentation de Teacherss
 
