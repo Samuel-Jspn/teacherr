@@ -1,6 +1,7 @@
 import React from 'react';
 import {Link} from "react-router-dom"
 import '../styles/inscription/inscription.css'
+import Role from "../Role";
 
 function inscriptionPage() {
     return (
@@ -18,6 +19,9 @@ function inscriptionPage() {
                                     <input type="" placeholder='Prénom'/>
                                     <i className='bx bx-pulse'></i>
                                 </div>
+                            </div>
+                            <div>
+                                <Role />
                             </div>
                             <div className="ChampRenseignemants">
                                 <input type="email" placeholder='Adresse email'/>
