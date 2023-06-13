@@ -6,23 +6,25 @@ function home() {
     return (
         <body>
             <div className="all">
-                <div className='block'>
-                    <form action="" method="post" className="">
-                        <h1 className="title">Professeur en Maths</h1>
+                <form action="" method="post" className="">
+                    <h1 className="title">Professeur en Maths</h1>
+                    <div className='block'>
+                        <div className="infos">
                             <div className='champ'>
                                 Niveau Bac+2
                             </div>
                             <div className='champ'>
                                 Description de la méthode de travail, des chapitres... 
                             </div>
-                            <button className='button'>
-                            <div className='rdv'>
-                                <p>Prendre<br /> rendez-vous</p>
-                            </div>
-                        </button>
-                    </form>
-                   </div>
-               </div>
+                        </div>
+                        <div className="centered-button-container">
+                            <button className="centered-button">
+                                Prendre rdv
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
         </body>
     );
 }

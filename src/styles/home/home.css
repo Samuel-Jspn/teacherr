@@ -1,33 +1,27 @@
-@import url(
-  "https://fonts.googleapis.com/css?family=Montserrat: 900, 400, 700, 600, 500, 900italic"
-);
+@import url("https://fonts.googleapis.com/css?family=Montserrat: 900, 400, 700, 600, 500, 900italic");
 
 :root {
-    --black: rgba(0, 0, 0, 1);
-    --secondary: rgba(50, 116, 109, 1);
-    --primary: rgba(52, 73, 94, 1);
-    --subtext: rgba(194, 194, 194, 1);
-    --cloud: rgba(196, 196, 196, 0.2) ;
-    --dominant: rgba(247, 252, 255, 1);
-    --white: rgba(255, 255, 255, 1);
+  --black: rgba(0, 0, 0, 1);
+  --secondary: rgba(50, 116, 109, 1);
+  --primary: rgba(52, 73, 94, 1);
+  --subtext: rgba(194, 194, 194, 1);
+  --cloud: rgba(196, 196, 196, 0.2);
+  --dominant: rgba(247, 252, 255, 1);
+  --white: rgba(255, 255, 255, 1);
 
-    --font-size-xxs: 16px;
-    --font-size-s: 22px;
-    --font-size-l: 32px;
-    --font-size-xl: 64px;
-    --font-size-xxl: 80px;
-    --font-size-m2: 20px;
-    --font-size-12: 24px;
+  --font-size-xxs: 16px;
+  --font-size-s: 22px;
+  --font-size-l: 32px;
+  --font-size-xl: 64px;
+  --font-size-xxl: 80px;
+  --font-size-m2: 20px;
+  --font-size-12: 24px;
 
-    --font-family-font_awesome_5_free-regular: "Font Awesome 5 Free-Regular";
-    --font-family-font_awesome_5-free-solid: "Font Awesome 5 Free-Solid";
-    --font-family-font_awesome_6-free-solid: "Font Awesome 6 Free-Solid";
-    --font-family-montserrat: "Montserrat";
+  --font-family-font_awesome_5_free-regular: "Font Awesome 5 Free-Regular";
+  --font-family-font_awesome_5-free-solid: "Font Awesome 5 Free-Solid";
+  --font-family-font_awesome_6-free-solid: "Font Awesome 6 Free-Solid";
+  --font-family-montserrat: "Montserrat";
 }
-
-
-
-
 
 screen a {
   display: contents;
@@ -43,111 +37,116 @@ screen a {
 }
 
 .container-center-horizontal > * {
-    flex-shrink: 0;
-    pointer-events: auto;
+  flex-shrink: 0;
+  pointer-events: auto;
 }
 
 .not-connected-home {
-    align-items: flex-start;
-    background-color: var (--dominant);
-    border: 1px none;
-    display: flex;
-    flex-direction: column;
-    gap: 88px;
-    height: 1080px;
-    padding: 86px 80px;
-    width: 1920px;
-}
-
-.title {
-    letter-spacing: 0;
-    line-height: normal;
-    margin-left: 80px;
-    min-height: 98px;
+  align-items: flex-start;
+  background-color: var (--dominant);
+  border: 1px none;
+  display: flex;
+  flex-direction: column;
+  gap: 88px;
+  height: 1080px;
+  padding: 86px 80px;
+  width: 1920px;
 }
 
 .frame-11 {
-    align-items: flex-start;
-    align-self: flex-end;
-    display: flex;
-    gap: 40px;
-    position: relative;
-    width: 1680px;
+  align-items: flex-start;
+  align-self: flex-end;
+  display: flex;
+  gap: 40px;
+  position: relative;
+  width: 1680px;
 }
 
 .frame-14 {
-    align-items: center;
-    align-self: stretch;
-    background-color: var (--white);
-    border-radius: 20px;
-    display: flex;
-    flex: 1;
-    gap: 10px;
-    padding: 10px 50px;
-    position: relative;
+  align-items: center;
+  align-self: stretch;
+  background-color: var (--white);
+  border-radius: 20px;
+  display: flex;
+  flex: 1;
+  gap: 10px;
+  padding: 10px 50px;
+  position: relative;
 }
 
 .courte-explication-du-site,
-    .connexion {
-    letter-spacing: 0;
-    line-height: normal;
-    position: relative;
-    width: fit-content;
+.connexion {
+  letter-spacing: 0;
+  line-height: normal;
+  position: relative;
+  width: fit-content;
 }
 
 .frame-15 {
-    align-items: flex-start;
-    display: flex;
-    gap: 20px;
-    position: relative;
-    width: fit-content;
+  align-items: flex-start;
+  display: flex;
+  gap: 20px;
+  position: relative;
+  width: fit-content;
 }
 
 .frame-11-1 {
-    align-items: center;
-    background-color: var (--secondary);
-    border-radius: 20px;
-    display: flex;
-    gap: 40px;
-    height: 100px;
-    justify-content: center;
-    padding: 20px 20px 20px 40x;
-    position: relative;
-    width: 482px;
+  align-items: center;
+  background-color: var (--secondary);
+  border-radius: 20px;
+  display: flex;
+  gap: 40px;
+  height: 100px;
+  justify-content: center;
+  padding: 20px 20px 20px 40x;
+  position: relative;
+  width: 482px;
 }
 
 .inscription {
-    color: var (--white);
-    font-family: var (--font-family-montserrat);
-    font-size: var (--font-size-12);
-    font-weight: 500;
-    letter-spacing: 0;
-    line-height: normal;
-    position: relative;
-    width: fit-content;
+  color: var (--white);
+  font-family: var (--font-family-montserrat);
+  font-size: var (--font-size-12);
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: normal;
+  position: relative;
+  width: fit-content;
+}
+
+form {
+  background-color: #e9edc9;
+  border-radius: 15px;
 }
 
 .block {
-    background-color: white;
-    width: 800px;
-    border-radius: 15px;
+  display: flex;
+  align-items: center;
 }
 
 .title {
-    font-size: 20px;
+  font-size: 30px;
+  font-weight: normal;
+  padding: 5%;
+  color: #463f3a;
 }
 
-.button {
-    float:right;
-    border: none;
-    background: none;
-    font-family: "Montserrat", sans-serif;
-    position: absolute;
-    top: 50%;
-    right: 20%;
-    transform: translate(-50%, -50%);
+.block > div > div {
+  margin: 15px;
+  font-size: 20px;
+  color: #463f3a;
 }
 
-form > div {
-    margin: 15px;
+.centered-button-container {
+  float: right;
+}
+
+.centered-button {
+  border: none;
+  background: none;
+  font-family: "Montserrat", sans-serif;
+  color: #463f3a;
+  font-size: 18px;
+  margin: 1%;
+  padding: 5%;
 }
