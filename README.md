@@ -1,70 +1,66 @@
-# Getting Started with Create React App
+(src/logo.svg)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Documentation de Teacherss
 
-## Available Scripts
+Teacherss est une application de mise en relation de tuteurs et d'étudiants pour du soutien scolaire en ligne. Cette documentation fournit des informations détaillées sur l'application et ses fonctionnalités, ainsi que des instructions sur la manière de l'installer et de l'utiliser.
 
-In the project directory, you can run:
+## Fonctionnalités
 
-### `npm start`
+### Pour les élèves
+- Créer un compte d'élève pour accéder à la plateforme.
+- Modifier les informations du compte d'élève, y compris les détails personnels et les préférences d'apprentissage.
+- Rechercher des tuteurs disponibles pour des cours particuliers en ligne.
+- Réserver des séances avec les tuteurs sélectionnés.
+- Annuler les séances de tutorat en cas d'imprévu.
+- Consulter l'historique des séances passées.
+- Évaluer les tuteurs après chaque séance.
+- Recevoir des notifications pour les rappels de cours.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Pour les tuteurs
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Créer un compte de tuteur pour proposer des cours particuliers.
+- Gérer les informations du compte de tuteur, y compris les compétences et les disponibilités.
+- Mettre en ligne des séances de tutorat et les rendre disponibles aux élèves.
+- Modifier ou annuler les séances de tutorat en cas d'imprévu.
+- Visualiser les demandes de réservation des élèves et les valider ou les rejeter.
+- Consulter et gérer l'historique des séances passées.
+- Recevoir des évaluations de la part des élèves.
+- Recevoir des notifications pour les rappels de cours.
 
-### `npm test`
+### Service client
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Gérer les comptes des tuteurs et des élèves, y compris la création, la suspension et la suppression.
+- Examiner et répondre aux réclamations des utilisateurs.
+- Consulter les statistiques d'utilisation de la plateforme.
+- Recevoir des notifications pour les demandes et les problèmes nécessitant une intervention.
 
-### `npm run build`
+## Utilisation
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Pour les élèves :
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. Créez un compte d'élève en fournissant les informations requises.
+2. Une fois connecté, explorez les profils des tuteurs et utilisez la fonction de recherche pour trouver des tuteurs correspondant à vos besoins.
+3. Réservez une séance avec un tuteur en sélectionnant une date et une heure disponibles.
+4. Consultez votre calendrier pour voir les séances réservées et les détails.
+5. Après chaque séance, évaluez le tuteur en fournissant un retour d'expérience et une note.
+6. Vous recevrez des notifications pour les rappels de cours et les mises à jour concernant vos séances.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Pour les tuteurs :
 
-### `npm run eject`
+1. Créez un compte de tuteur en fournissant les informations requises, notamment vos compétences et disponibilités.
+2. Une fois connecté, mettez en ligne des séances de tutorat en spécifiant les détails tels que le sujet, la durée et le tarif.
+3. Visualisez les demandes de réservation des élèves et acceptez ou refusez-les en fonction de vos disponibilités.
+4. Consultez votre calendrier pour voir les séances réservées et les détails.
+5. Après chaque séance, consultez les évaluations et les retours des élèves.
+6. Vous recevrez des notifications pour les rappels de cours et les nouvelles réservations.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Pour le service client :
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. Utilisez vos informations d'identification pour accéder à l'interface du service client.
+Gérez les comptes des tuteurs et des élèves en créant, suspendant ou supprimant des comptes si nécessaire.
+2. Examinez les réclamations des utilisateurs et répondez-y de manière appropriée pour résoudre les problèmes.
+3. Consultez les statistiques d'utilisation de la plateforme pour obtenir des informations sur les tendances et optimiser le service.
+4. Vous recevrez des notifications pour les demandes et les problèmes nécessitant une intervention.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+N'hésitez pas à consulter la documentation supplémentaire ou à contacter notre équipe d'assistance si vous avez des questions ou des problèmes lors de l'utilisation de l'application Teacherss.
