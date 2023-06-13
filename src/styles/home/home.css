@@ -126,3 +126,17 @@ screen a {
     position: relative;
     width: fit-content;
 }
+
+.contenu_recherche {
+    position: relative;
+    margin: 10px;
+    top : 10%;
+}
+
+body > div{
+    position: relative;
+}
+
+body {
+    overflow-y: auto;
+}

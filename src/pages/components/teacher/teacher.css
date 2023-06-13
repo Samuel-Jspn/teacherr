@@ -1,0 +1,39 @@
+form {
+    background-color: #e9edc9;
+    border-radius: 15px;
+  }
+  
+.block {
+    margin: 10px;
+}
+
+.title {
+    font-size: 30px;
+    font-weight: normal;
+    padding: 5%;
+    color: #463f3a;
+}
+
+.block > div > div {
+    margin: 15px;
+    font-size: 20px;
+    color: #463f3a;
+}
+
+.button-container {
+    float: right;
+}
+
+.button {
+    border: none;
+    background: none;
+    font-family: "Montserrat", sans-serif;
+    color: #463f3a;
+    font-size: 18px;
+    margin: 1%;
+    padding: 5%;
+}
+
+.block > div {
+    display: inline-block;
+}
