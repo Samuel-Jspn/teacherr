@@ -1,8 +1,6 @@
-![logo](/src/logo.svg)
-
 # Documentation de Teacherss
 
-Teacherss est une application de mise en relation de tuteurs et d'étudiants pour du soutien scolaire en ligne. Cette documentation fournit des informations détaillées sur l'application et ses fonctionnalités, ainsi que des instructions sur la manière de l'installer et de l'utiliser.
+Teacherss est une application de mise en relation de tuteurs et d'étudiants pour du soutien scolaire en ligne. Cette documentation fournit des informations détaillées sur l'application et ses fonctionnalités, ainsi que des instructions sur la manière de l'utiliser.
 
 ## Fonctionnalités
 
@@ -34,7 +32,7 @@ Teacherss est une application de mise en relation de tuteurs et d'étudiants pou
 - Consulter les statistiques d'utilisation de la plateforme.
 - Recevoir des notifications pour les demandes et les problèmes nécessitant une intervention.
 
-## Utilisation
+## Notice d'utilisation
 
 ### Pour les élèves :
 
@@ -57,10 +55,10 @@ Teacherss est une application de mise en relation de tuteurs et d'étudiants pou
 ### Pour le service client :
 
 1. Utilisez vos informations d'identification pour accéder à l'interface du service client.
-Gérez les comptes des tuteurs et des élèves en créant, suspendant ou supprimant des comptes si nécessaire.
-2. Examinez les réclamations des utilisateurs et répondez-y de manière appropriée pour résoudre les problèmes.
-3. Consultez les statistiques d'utilisation de la plateforme pour obtenir des informations sur les tendances et optimiser le service.
-4. Vous recevrez des notifications pour les demandes et les problèmes nécessitant une intervention.
+2. Gérez les comptes des tuteurs et des élèves en créant, suspendant ou supprimant des comptes si nécessaire.
+3. Examinez les réclamations des utilisateurs et répondez-y de manière appropriée pour résoudre les problèmes.
+4. Consultez les statistiques d'utilisation de la plateforme pour obtenir des informations sur les tendances et optimiser le service.
+5. Vous recevrez des notifications pour les demandes et les problèmes nécessitant une intervention.
 
 
-N'hésitez pas à consulter la documentation supplémentaire ou à contacter notre équipe d'assistance si vous avez des questions ou des problèmes lors de l'utilisation de l'application Teacherss.
+**N'hésitez pas à consulter la documentation supplémentaire ou à contacter notre équipe d'assistance si vous avez des questions ou des problèmes lors de l'utilisation de l'application Teacherss.** 
