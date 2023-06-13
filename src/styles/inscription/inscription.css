@@ -1,160 +1,164 @@
 .all {
-    display: flex;
-    flex-direction: column;  
-    justify-content: center;
-    align-items: center;
-    width: 100vw;   
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
 }
 
 .zoom {
-    zoom: 80%;
+  zoom: 80%;
 }
 
-.titre {
-    justify-content: center;
-    width: auto;
-    height: 4.875rem;
-    display: flex;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 4rem;
-    line-height: 4.875rem;
-    color: #34495E;
-    margin-bottom: 2rem;
+.iTitre {
+  justify-content: center;
+  width: auto;
+  height: 4.875rem;
+  display: flex;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 4rem;
+  line-height: 4.875rem;
+  color: var(--color-brown);
+  margin-bottom: 2rem;
 }
 
 .name {
-    display: flex;
-    flex-direction: row;
-    gap: 4%;
-    margin-bottom: 2rem;
+  display: flex;
+  flex-direction: row;
+  gap: 4%;
+  margin-bottom: 2rem;
 }
 
-.ChampNom { 
-    display: flex;   
-    width: auto;
-    height: 4.063rem;
-    background: #FFFFFF;
-    border-radius: 1.25rem;
-    padding: 0.625rem 1.375rem;
+.ChampNom {
+  display: flex;
+  width: auto;
+  height: 4.063rem;
+  background: #ffffff;
+  border-radius: 1.25rem;
+  padding: 0.625rem 1.375rem;
 }
 
 .ChampNom input {
-    width: 8.15rem;
-    height: auto;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 1.75rem;
-    line-height: 1.813rem;
-    color: #C2C2C2;
-    border: none;
-    outline: none;
-    border-radius: 0.2rem;
+  width: 8.15rem;
+  height: auto;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.75rem;
+  line-height: 1.813rem;
+  color: var(--color-brown);
+  border: none;
+  outline: none;
+  border-radius: 0.2rem;
 }
 
-.ChampNom i {    
-    width: auto;
-    height: 1.75rem;
-    margin-left: 2.75rem;
-    margin-top: 4%;
-    font-family: 'Font Awesome 5 Free';
-    font-style: normal;
-    font-weight: 900;
-    font-size: 1.75rem;
-    line-height: 1.75rem;
-    color: #34495E;
+.ChampNom i {
+  width: auto;
+  height: 1.75rem;
+  margin-left: 2.75rem;
+  margin-top: 4%;
+  font-family: "Font Awesome 5 Free";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 1.75rem;
+  line-height: 1.75rem;
+  color: #34495e;
 }
 
-.ChampRenseignemants { 
-    display: flex;   
-    width: 100%;
-    height: 4.063rem;
-    background: #FFFFFF;
-    border-radius: 1.25rem;
-    padding: 0.625rem 1.375rem;   
-    margin-bottom: 2rem;
+.iChampRenseignements {
+  display: flex;
+  width: 100%;
+  height: 4.063rem;
+  background: #ffffff;
+  border-radius: 1.25rem;
+  padding: 0.625rem 1.375rem;
+  margin-bottom: 2rem;
 }
 
-.ChampRenseignemants input {
-    width: 24.82rem;
-    height: auto;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 1.75rem;
-    line-height: 1.813rem;
-    color: #C2C2C2;
-    border: none;
-    outline: none;
-    border-radius: 0.2rem;
+.iChampRenseignements input {
+  width: 24.82rem;
+  height: auto;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.75rem;
+  line-height: 1.813rem;
+  color: var(--color-brown);
+  border: none;
+  outline: none;
+  border-radius: 0.2rem;
 }
 
-.ChampRenseignemants i {    
-    width: auto;
-    height: 1.75rem;
-    margin-left: 2.75rem;
-    margin-top: 2%;
-    font-family: 'Font Awesome 5 Free';
-    font-style: normal;
-    font-weight: 900;
-    font-size: 1.75rem;
-    line-height: 1.75rem;
-    color: #34495E;
+.iChampRenseignements i {
+  width: auto;
+  height: 1.75rem;
+  margin-left: 2.75rem;
+  margin-top: 2%;
+  font-family: "Font Awesome 5 Free";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 1.75rem;
+  line-height: 1.75rem;
+  color: #34495e;
 }
 
 .create {
-    display: flex;
-    width: 100%;
-    height: 4.063rem;
-    background: #32746D;
-    border-radius: 1.25rem;
-    margin-bottom: 1rem;
-    border: none;
-    outline: none;
-    border-radius: 1.25rem;
+  display: flex;
+  width: 110%;
+  height: 4.063rem;
+  background: var(--color-buff);
+  border-radius: 1.25rem;
+  margin-bottom: 1rem;
+  border: none;
+  outline: none;
+  border-radius: 1.25rem;
+}
+
+.create:hover {
+  cursor: pointer;
 }
 
 .creation {
-    display: flex;
-    margin-top: 3%;
-    margin-left: 21.5%;
+  display: flex;
+  margin-top: 3%;
+  margin-left: 21.5%;
 }
 
 .creation p {
-    width: auto;
-    height: 1.75rem;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 900;
-    font-size: 1.5rem;
-    line-height: 1.75rem;
-    color: #fff;
-    margin-top: 0%;
+  width: auto;
+  height: 1.75rem;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 1.5rem;
+  line-height: 1.75rem;
+  color: #fff;
+  margin-top: 0%;
 }
 
-.creation i {    
-    width: 1.5rem;
-    height: 1.75rem;
-    font-family: 'Font Awesome 5 Free';
-    font-style: normal;
-    font-weight: 900;
-    font-size: 2rem;
-    line-height: 1.75rem;
-    color: #fff;
-    margin-left: 1rem;
+.creation i {
+  width: 1.5rem;
+  height: 1.75rem;
+  font-family: "Font Awesome 5 Free";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 2rem;
+  line-height: 1.75rem;
+  color: #fff;
+  margin-left: 1rem;
 }
 
-.all .registration {
-    display: flex;
-    width: 100%;
-    height: 1.5rem;
-    justify-content: center;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 1.25rem;
-    line-height: 1.5rem;
-    color: #32746D;
+.all .toConnection {
+  display: flex;
+  width: 100%;
+  height: 1.5rem;
+  justify-content: center;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  color: #32746d;
 }

@@ -1,0 +1,38 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--color-tea);
+  color: var(--color-dark-brown);
+  opacity: 0.8;
+  width: 100%;
+  height: 70px;
+  position: fixed;
+  top: 0px;
+}
+
+.logos .navbar-image {
+  width: 75px;
+}
+
+a {
+  text-decoration: none;
+}
+.navbar a {
+  padding-right: 10px;
+  color: var(--color-dark-brown);
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.btn .btn-profile {
+  border-radius: 50%;
+}
+
+.navbar .profile-picture {
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 25px;
+}
