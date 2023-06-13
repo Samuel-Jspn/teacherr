@@ -3,7 +3,6 @@ body {
   flex-direction: row;
   overflow-y: hidden;
   height: 100vh;
-  gap: 3rem;
   margin: 0;
 
   font-family: "Montserrat", sans-serif;
