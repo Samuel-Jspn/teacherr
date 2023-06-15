@@ -4,7 +4,6 @@ import "../styles/connection/connection.css";
 import { FaEnvelope } from 'react-icons/fa';
 import { FaLock } from 'react-icons/fa';
 import { FaArrowRight } from 'react-icons/fa';
-import { MdOutlineGesture } from 'react-icons/md';
 
 function connectionPage() {
   return (
