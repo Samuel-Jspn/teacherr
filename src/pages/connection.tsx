@@ -1,7 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "../styles/connection/connection.css";
-import "boxicons";
+import { FaEnvelope } from "react-icons/fa";
+import { FaLock } from "react-icons/fa";
+import { FaArrowRight } from "react-icons/fa";
 
 function connectionPage() {
   return (
@@ -11,16 +13,16 @@ function connectionPage() {
           <h1 className="cTitre">Connexion</h1>
           <div className="cChampRenseignements">
             <input type="email" placeholder="Adresse email" />
-            <i className="bx bxs-envelope"></i>
+            <FaEnvelope />
           </div>
           <div className="cChampRenseignements">
             <input type="password" placeholder="Mot de passe" />
-            <i className="bx bxs-lock-alt"></i>
+            <FaLock />
           </div>
           <button className="connection">
             <div className="connexion">
               <p>Je me connecte</p>
-              <i className="bx bx-right-arrow-alt" />
+              <FaArrowRight />
             </div>
           </button>
           <Link to="/inscription">

@@ -1,6 +1,22 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "../styles/inscription/inscription.css";
+import { FaEnvelope } from "react-icons/fa";
+import { FaLock } from "react-icons/fa";
+import { MdOutlineGesture } from "react-icons/md";
+import { MdSchool } from "react-icons/md";
+import { BsFillPersonFill } from "react-icons/bs";
+
+const items = [
+  {
+    id: 1,
+    value: "Tuteur",
+  },
+  {
+    id: 2,
+    value: "Etudiant",
+  },
+];
 
 function inscriptionPage() {
   return (
@@ -8,37 +24,55 @@ function inscriptionPage() {
       <div className="all">
         <div className="zoom">
           <form action="" method="post" className="">
-            <h1 className="iTitre">Inscription</h1>
+            <h1 className="titre">Inscription</h1>
             <div className="name">
               <div className="ChampNom">
                 <input type="" placeholder="Nom" />
-                <i className="bx bx-pulse"></i>
+                <MdOutlineGesture className="iconne" />
               </div>
               <div className="ChampNom">
                 <input type="" placeholder="Prénom" />
-                <i className="bx bx-pulse"></i>
+                <MdOutlineGesture className="iconne" />
               </div>
             </div>
-            <div className="iChampRenseignements">
+            <div>
+              <div className="sec-center">
+                <input
+                  className="dropdown"
+                  type="checkbox"
+                  id="dropdown"
+                  name="dropdown"
+                />
+                <label className="for-dropdown" htmlFor="dropdown">
+                  Choisissez votre statut
+                </label>
+                <div className="section-dropdown">
+                  <a href="#">
+                    Tuteur <MdSchool />
+                  </a>
+                  <a href="#">
+                    Etudiant <BsFillPersonFill />
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div className="ChampRenseignemants">
               <input type="email" placeholder="Adresse email" />
-              <i className="bx bxs-envelope"></i>
+              <FaEnvelope className="iconnes" />
             </div>
-            <div className="iChampRenseignements">
+            <div className="ChampRenseignemants">
               <input type="password" placeholder="Mot de passe" />
-              <i className="bx bxs-lock-alt"></i>
+              <FaLock className="iconnes" />
             </div>
-            <div className="iChampRenseignements">
+            <div className="ChampRenseignemants">
               <input type="password" placeholder="Vérification mot de passe" />
-              <i className="bx bxs-lock-alt"></i>
+              <FaLock className="iconnes" />
             </div>
             <button className="create">
-              <div className="creation">
-                <p>Je crée mon compte</p>
-                <i className="bx bx-right-arrow-alt"></i>
-              </div>
+              <p>Je crée mon compte</p>
             </button>
             <Link to="/connection">
-              <div className="toConnection">
+              <div className="registration">
                 Déjà membre de la plateforme ? C'est par ici !
               </div>
             </Link>
