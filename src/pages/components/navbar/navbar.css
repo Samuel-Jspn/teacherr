@@ -36,3 +36,8 @@ a {
   border-radius: 50%;
   margin-right: 25px;
 }
+
+.navbar-right {
+  display: flex;
+  justify-content: end;
+}

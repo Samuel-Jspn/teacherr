@@ -127,16 +127,14 @@ screen a {
     width: fit-content;
 }
 
-.contenu_recherche {
-    position: relative;
-    margin: 10px;
-    top : 10%;
-}
-
-body > div{
-    position: relative;
-}
-
 body {
     overflow-y: auto;
+}
+
+div {
+    width: 100%;
+}
+
+.conteneur_annonces {
+    margin-top: 5em;
 }

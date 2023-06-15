@@ -6,10 +6,7 @@ import Accueil from "./pages/accueil";
 
 function App() {
   return (
-    <body>
-      <header></header>
-
-      <div className="Teacherr">
+    <div className="Teacherr">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/connection" element={<Connection />} />
@@ -17,7 +14,6 @@ function App() {
           <Route path="/accueil" element={<Accueil />} />
         </Routes>
       </div>
-    </body>
   );
 }
 
