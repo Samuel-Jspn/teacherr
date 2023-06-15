@@ -1,0 +1,105 @@
+.block {
+  margin: 10px;
+}
+
+.title_teacher {
+  font-size: 20px;
+  font-weight: normal;
+  padding: 1%;
+  color: var(--color-dark-brown);
+}
+
+@media (min-width: 768px) {
+  .title_teacher {
+    font-size: 30px;
+  }
+}
+
+.block > div > div {
+  margin: 5px;
+  font-size: 15px;
+  color: var(--color-dark-brown);
+}
+
+@media (min-width: 768px) {
+  .block > div > div {
+    margin: 10px;
+    font-size: 20px;
+  }
+}
+
+p {
+  text-align: justify;
+  color: var(--color-dark-brown);
+  width: 90%;
+  font-size: 13px;
+  margin: 5px;
+}
+
+@media (min-width: 768px) {
+  p {
+    width: 95%;
+    font-size: 18px;
+    margin: 10px;
+  }
+}
+
+.button-container {
+  display: flex;
+  justify-content: end;
+}
+
+.button {
+  border: none;
+  background: none;
+  font-family: "Montserrat", sans-serif;
+  color: var(--color-dark-brown);
+  font-size: 15px;
+  margin-right: 5%;
+  margin-bottom: 2%;
+  margin-top: 2%;
+  background-color: var(--color-buff);
+  border-radius: 15px;
+  padding: 10px;
+}
+
+.button:hover {
+  background-color: var(--color-dark-brown);
+  color: var(--color-skin);
+  transition: 0.5s;
+  cursor: pointer;  
+}
+
+@media (min-width: 768px) {
+  .button {
+    font-size: 20px;
+    margin-top: 1%;
+  }
+}
+
+.conteneur {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 95%;
+  height: auto;
+  margin: 2%;
+}
+
+form {
+  width: 90%;
+  background-color: var(--color-skin);
+  border-radius: 15px;
+}
+
+.profile-picture {
+  height: 60px;
+  border-radius: 50%;
+  margin: 2%;
+}
+
+#entete {
+  display: flex;
+  align-items: center; /* Alignement vertical */
+  margin: 5px;
+}

@@ -126,3 +126,15 @@ screen a {
     position: relative;
     width: fit-content;
 }
+
+body {
+    overflow-y: auto;
+}
+
+div {
+    width: 100%;
+}
+
+.conteneur_annonces {
+    margin-top: 5em;
+}
