@@ -2,10 +2,13 @@
 
 .all {
   display: flex;
-  flex-direction: column;
+  width: auto;
   justify-content: center;
   align-items: center;
-  max-width: 96.901vw;
+}
+
+form {
+  width: auto;
 }
 
 .cTitre {
@@ -20,16 +23,19 @@
   line-height: 4.875rem;
   color: var(--color-brown);
   margin-bottom: 1rem;
+  
 }
 
 .cChampRenseignements {
   display: flex;
-  width: 100%;
+  max-width: 30rem;
+  width: auto;
   height: 4.063rem;
   background: #ffffff;
   border-radius: 1.25rem;
-  padding: 0.625rem 1.375rem;
   margin-bottom: 1rem;
+  justify-content: center;
+  align-items: center;
 }
 
 .cChampRenseignements input {
@@ -48,6 +54,7 @@
 
 .cChampRenseignements i {
   width: auto;
+  max-width: 30rem;
   height: 1.75rem;
   margin-left: 2.75rem;
   margin-top: 2%;
@@ -61,7 +68,7 @@
 
 .connection {
   display: flex;
-  width: 110%;
+  width: 30rem;
   height: 4.063rem;
   background: var(--color-buff);
   border-radius: 1.25rem;
@@ -107,7 +114,7 @@
 
 .all .registration {
   display: flex;
-  width: 100%;
+  width: 30rem;
   height: 1.5rem;
   justify-content: center;
   font-family: "Montserrat";

@@ -56,15 +56,15 @@ function inscriptionPage() {
                 </div>
               </div>
             </div>
-            <div className="ChampRenseignemants">
+            <div className="iChampRenseignemants">
               <input type="email" placeholder="Adresse email" />
               <FaEnvelope className="iconnes" />
             </div>
-            <div className="ChampRenseignemants">
+            <div className="iChampRenseignemants">
               <input type="password" placeholder="Mot de passe" />
               <FaLock className="iconnes" />
             </div>
-            <div className="ChampRenseignemants">
+            <div className="iChampRenseignemants">
               <input type="password" placeholder="Vérification mot de passe" />
               <FaLock className="iconnes" />
             </div>
