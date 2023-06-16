@@ -4,6 +4,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 2%;
 }
 
 .cForm {
@@ -35,7 +36,7 @@
 .cChampRenseignements {
   display: flex;
   max-width: 30rem;
-  width: auto;
+  width: 85%;
   height: 4.063rem;
   background: #ffffff;
   border-radius: 1.25rem;
@@ -75,7 +76,7 @@
 
 .connection {
   display: flex;
-  width: 30rem;
+  width: 95%;
   height: 4.063rem;
   background: var(--color-buff);
   border-radius: 1.25rem;

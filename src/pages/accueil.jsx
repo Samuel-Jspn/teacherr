@@ -9,20 +9,20 @@ function home() {
   return (
     <body>
       <div className="preview">
-        <img className="preview-logo" src={teacherrLogo} />
-        <img src={teacherr} />
+        <img className="preview-icon" src={teacherrLogo} />
+        <img className="preview-logo" src={teacherr} />
         <div className="titles">
           <h1>Bienvenue sur Teacherr</h1>
           <h2>Une application de réservation de cours de tutorat</h2>
         </div>
         <div className="lien-btn">
           <Link to="/connection">
-            <button href="/connection">
+            <button className="redirections">
               <p>Connexion</p>
             </button>
           </Link>
           <Link to="/inscription">
-            <button>
+            <button className="redirections">
               <p>Inscription</p>
             </button>
           </Link>

@@ -1,13 +1,15 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat: 900, 400, 700, 600, 500, 900italic");
 
-body {
-  --font-family-montserrat: "Montserrat";
+.preview {
   font-family: var(--font-family-montserrat);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100vw;
+  height: 90vh;
+  color: var(--color-brown);
+  text-align: center;
 }
 
 h2 {
@@ -19,25 +21,27 @@ h2 {
   text-align: center;
 }
 
+.preview-icon {
+  width: 20%;
+}
+
 .preview-logo {
-  width: 10rem;
-  display: block;
-  width: 60%;
-  margin: auto;
+  width: 25%;
 }
 
 .lien-btn {
-  width: 60%;
-  display: block;
-  margin: auto;
+  width: 50%;
+  max-height: 1%;
+  display: flex;
+  gap: 3rem;
   justify-content: center;
 }
 
-button {
-  display: flex;
-  width: 100%;
+.lien-btn .redirections {
+  display: block;
+  width: 110%;
   justify-content: center;
-  text-align: center;
+  /* text-align: center; */
   background: var(--color-buff);
   border: none;
   outline: none;
@@ -49,7 +53,7 @@ button {
   color: var(--color-dark-brown);
 }
 
-button:hover {
+.lien-btn .redirections:hover {
   cursor: pointer;
   background: var(--color-dark-brown);
   transition: 0.5s;

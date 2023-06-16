@@ -28,7 +28,7 @@
   }
 }
 
-p {
+.info-description {
   text-align: justify;
   color: var(--color-dark-brown);
   width: 90%;
@@ -37,7 +37,7 @@ p {
 }
 
 @media (min-width: 768px) {
-  p {
+  .info-description {
     width: 95%;
     font-size: 18px;
     margin: 10px;

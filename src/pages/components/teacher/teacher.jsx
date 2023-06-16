@@ -13,7 +13,7 @@ const Teacher = ({ title, level, description }) => {
                 <div className='block'>
                     <div className="infos">
                         <div>{level}</div>
-                        <p>{description}</p>
+                        <p className="info-description">{description}</p>
                     </div>
                     <div className="button-container">
                         <button className="button">

@@ -47,10 +47,10 @@ function inscriptionPage() {
                   Choisissez votre statut
                 </label>
                 <div className="section-dropdown">
-                  <a href="#">
+                  <a className="dropdown-options" href="#">
                     Tuteur <MdSchool />
                   </a>
-                  <a href="#">
+                  <a className="dropdown-options" href="#">
                     Etudiant <BsFillPersonFill />
                   </a>
                 </div>

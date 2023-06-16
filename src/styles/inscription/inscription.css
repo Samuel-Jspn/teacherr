@@ -234,7 +234,7 @@
   z-index: 2;
 }
 
-a {
+.dropdown-options {
   position: relative;
   color: var(--color-brown);
   font-family: "Montserrat";
@@ -254,7 +254,7 @@ a {
   justify-content: space-between;
 }
 
-a:hover {
+.dropdown-options:hover {
   color: var(--color-dark-brown);
   background-color: var(--color-buff);
 }
