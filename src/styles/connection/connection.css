@@ -28,7 +28,7 @@
   font-size: 4rem;
   line-height: 4.875rem;
   color: var(--color-brown);
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
   
 }
 
@@ -39,9 +39,10 @@
   height: 4.063rem;
   background: #ffffff;
   border-radius: 1.25rem;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
   justify-content: center;
   align-items: center;
+  padding: 0.625rem 1.375rem;
 }
 
 .cChampRenseignements input {
@@ -78,7 +79,7 @@
   height: 4.063rem;
   background: var(--color-buff);
   border-radius: 1.25rem;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
   border: none;
   outline: none;
   border-radius: 1.25rem;
@@ -102,7 +103,7 @@
   font-weight: 900;
   font-size: 1.5rem;
   line-height: 1.75rem;
-  color: #fff;
+  color: var(--color-dark-brown);
   margin-top: 0%;
 }
 
@@ -128,16 +129,14 @@
   font-weight: 500;
   font-size: 1.25rem;
   line-height: 1.5rem;
-  color: #32746d;
 }
 
-.iconnes {
+.cIconnes {
   font-size: 2rem;
   color: var(--color-dark-brown);
   width: auto;
   height: 1.75rem;
   margin-left: 2.75rem;
-  margin-top: 3%;
   font-family: "Font Awesome 5 Free";
   font-style: normal;
   font-weight: 900;

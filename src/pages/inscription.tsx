@@ -28,11 +28,11 @@ function inscriptionPage() {
             <div className="name">
               <div className="ChampNom">
                 <input type="" placeholder="Nom" />
-                <MdOutlineGesture className="iconne" />
+                <MdOutlineGesture className="iIconne" />
               </div>
               <div className="ChampNom">
                 <input type="" placeholder="Prénom" />
-                <MdOutlineGesture className="iconne" />
+                <MdOutlineGesture className="iIconne" />
               </div>
             </div>
             <div className="iDropdown">
@@ -58,15 +58,15 @@ function inscriptionPage() {
             </div>
             <div className="iChampRenseignemants">
               <input type="email" placeholder="Adresse email" />
-              <FaEnvelope className="iconnes" />
+              <FaEnvelope className="iIconnes" />
             </div>
             <div className="iChampRenseignemants">
               <input type="password" placeholder="Mot de passe" />
-              <FaLock className="iconnes" />
+              <FaLock className="iIconnes" />
             </div>
             <div className="iChampRenseignemants">
               <input type="password" placeholder="Vérification mot de passe" />
-              <FaLock className="iconnes" />
+              <FaLock className="iIconnes" />
             </div>
             <button className="create">
               <p>Je crée mon compte</p>

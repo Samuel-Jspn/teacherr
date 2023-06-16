@@ -13,16 +13,15 @@ function connectionPage() {
           <h1 className="cTitre">Connexion</h1>
           <div className="cChampRenseignements">
             <input type="email" placeholder="Adresse email" />
-            <FaEnvelope className="iconnes"/>
+            <FaEnvelope className="cIconnes"/>
           </div>
           <div className="cChampRenseignements">
             <input type="password" placeholder="Mot de passe" />
-            <FaLock className="iconnes"/>
+            <FaLock className="cIconnes"/>
           </div>
           <button className="connection">
             <div className="connexion">
               <p>Je me connecte</p>
-              <FaArrowRight className="iconnes"/>
             </div>
           </button>
           <Link to="/inscription">
