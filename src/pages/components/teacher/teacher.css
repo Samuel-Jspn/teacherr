@@ -83,13 +83,14 @@ p {
   align-items: center;
   width: 95%;
   height: auto;
-  margin: 2%;
+  margin: 2.5%;
+  
 }
 
-form {
-  width: 90%;
+.teacherForm {
   background-color: var(--color-skin);
   border-radius: 15px;
+  min-width: 100%;
 }
 
 .profile-picture {

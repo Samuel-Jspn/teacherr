@@ -8,21 +8,21 @@ import { FaArrowRight } from "react-icons/fa";
 function connectionPage() {
   return (
     <body>
-      <div className="all">
-        <form action="" method="post" className="">
+      <div className="cAll">
+        <form action="" method="post" className="cForm">
           <h1 className="cTitre">Connexion</h1>
           <div className="cChampRenseignements">
             <input type="email" placeholder="Adresse email" />
-            <FaEnvelope />
+            <FaEnvelope className="iconnes"/>
           </div>
           <div className="cChampRenseignements">
             <input type="password" placeholder="Mot de passe" />
-            <FaLock />
+            <FaLock className="iconnes"/>
           </div>
           <button className="connection">
             <div className="connexion">
               <p>Je me connecte</p>
-              <FaArrowRight />
+              <FaArrowRight className="iconnes"/>
             </div>
           </button>
           <Link to="/inscription">

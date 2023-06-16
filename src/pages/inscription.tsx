@@ -21,9 +21,9 @@ const items = [
 function inscriptionPage() {
   return (
     <body>
-      <div className="all">
+      <div className="iAll">
         <div className="zoom">
-          <form action="" method="post" className="">
+          <form action="" method="post" className="iForm">
             <h1 className="titre">Inscription</h1>
             <div className="name">
               <div className="ChampNom">
@@ -35,7 +35,7 @@ function inscriptionPage() {
                 <MdOutlineGesture className="iconne" />
               </div>
             </div>
-            <div>
+            <div className="iDropdown">
               <div className="sec-center">
                 <input
                   className="dropdown"

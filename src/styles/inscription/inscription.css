@@ -1,18 +1,29 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,700,900");
 
-.all {
+.iAll {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: auto;
 }
 
 .zoom {
   zoom: 80%;
+  min-width:fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-form {
+.iForm {
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-skin);
+  display: flex;
+  flex-direction: column;
+  border-radius: 1.25rem;
   width: auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .titre {
@@ -34,6 +45,7 @@ form {
   flex-direction: row;
   gap: 4%;
   margin-bottom: 2rem;
+  width: auto;
 }
 
 .ChampNom {
@@ -84,9 +96,9 @@ form {
   border-radius: 0.2rem;
 }
 
-.create {
+.iAll .create {
   display: flex;
-  width: 100%;
+  width: auto;
   height: 4.063rem;
   background: var(--color-buff);
   border-radius: 1.25rem;
@@ -109,7 +121,7 @@ form {
   margin-top: 3%;
 }
 
-.all .registration {
+.iAll .registration {
   display: flex;
   width: auto;
   height: 1.5rem;
@@ -120,6 +132,7 @@ form {
   font-size: 1.25rem;
   line-height: 1.5rem;
   color: var(--color-buff);
+  margin-bottom: 2rem;
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap");
@@ -150,7 +163,7 @@ form {
   line-height: 1.5rem;
   height: 4.063rem;
   border-radius: 1.25rem;
-  width: 100%;
+  width: auto;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -270,4 +283,8 @@ a:hover {
   font-style: normal;
   font-weight: 900;
   line-height: 1.75rem;
+}
+
+.iDropdown {
+  width: auto;
 }

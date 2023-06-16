@@ -1,18 +1,24 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;500&display=swap");
 
-.all {
+.cAll {
   display: flex;
-  width: auto;
   justify-content: center;
   align-items: center;
 }
 
-form {
+.cForm {
   width: auto;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-skin);
+  display: flex;
+  flex-direction: column;
+  border-radius: 1.25rem;
 }
 
 .cTitre {
   justify-content: center;
+  align-items: center;
   width: auto;
   height: 4.875rem;
   display: flex;
@@ -123,4 +129,17 @@ form {
   font-size: 1.25rem;
   line-height: 1.5rem;
   color: #32746d;
+}
+
+.iconnes {
+  font-size: 2rem;
+  color: var(--color-dark-brown);
+  width: auto;
+  height: 1.75rem;
+  margin-left: 2.75rem;
+  margin-top: 3%;
+  font-family: "Font Awesome 5 Free";
+  font-style: normal;
+  font-weight: 900;
+  line-height: 1.75rem;
 }
