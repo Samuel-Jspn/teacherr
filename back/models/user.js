@@ -21,14 +21,11 @@ const User = sequelize.define('User', {
         type: DataTypes.STRING,
         allowNull: false,
   },
-  /*status: {
-    type: DataTypes.STRING,
-    allowNull: true,
-  },*/  
-  /*data: {
-    type: DataTypes.BLOB("long"),
-    allowNull: true,
-  },*/
+    status: {
+      type: DataTypes.STRING,
+      allowNull: false,
+      unique: true,
+  }
 });
 
 module.exports = User;
