@@ -1,6 +1,6 @@
-# Documentation de Teacherss
+# Documentation de Teacherr
 
-Teacherss est une application de mise en relation de tuteurs et d'étudiants pour du soutien scolaire en ligne. Cette documentation fournit des informations détaillées sur l'application et ses fonctionnalités, ainsi que des instructions sur la manière de l'utiliser.
+Teacherr est une application de mise en relation de tuteurs et d'étudiants pour du soutien scolaire en ligne. Cette documentation fournit des informations détaillées sur l'application et ses fonctionnalités, ainsi que des instructions sur la manière de l'utiliser.
 
 ## Fonctionnalités
 
