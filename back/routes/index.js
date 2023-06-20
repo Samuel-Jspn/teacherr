@@ -9,6 +9,8 @@ const cors = require('cors');
 //var usersRouter = require('./users');
 var sensorRouter = require('./ConnBDD');
 const authRoutes = require('./authRoutes');
+const Profil = require('./Profil');
+
 
 var app = express();
 
@@ -27,7 +29,7 @@ app.use(cors());
 //app.use('/users', usersRouter);
 app.use('/sensors', sensorRouter);
 app.use('/auth', authRoutes);
-
+app.use('/modif', Profil)
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   next(createError(404));
@@ -43,5 +45,21 @@ app.use(function(err, req, res, next) {
   res.status(err.status || 500);
   res.render('error');
 });
+
+const storage = multer.diskStorage ({
+  destination: (req, file, cb) => {
+    cb(null, '../image' )
+  },
+  filename: (req, file, cb) => {
+    console.log(file)
+    cb(null, Date.now() + path.extname(file.originalname))
+  }
+})
+
+const upload = multer({storage : storage})
+
+app.post('/upload', upload.single('image'), (req, res) => {
+  res.send("Image Uploaded");
+})
 
 module.exports = app;

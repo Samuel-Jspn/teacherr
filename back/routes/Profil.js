@@ -42,3 +42,5 @@ router.put('/profil', authMiddleware, async (req, res) => {
 });
 
 module.exports = router;
+
+//image profile bloquer taille image env. 500ko
