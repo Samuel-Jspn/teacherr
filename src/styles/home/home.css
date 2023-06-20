@@ -53,26 +53,26 @@ screen a {
     border: 1px none;
     display: flex;
     flex-direction: column;
-    gap: 88px;
-    height: 1080px;
-    padding: 86px 80px;
-    width: 1920px;
+    gap: 5.5rem;
+    height: 67.5rem;
+    padding: 5.375rem 5rem;
+    width: 120rem;
 }
 
 .title {
     letter-spacing: 0;
     line-height: normal;
-    margin-left: 80px;
-    min-height: 98px;
+    margin-left: 5rem;
+    min-height: 6.125rem;
 }
 
 .frame-11 {
     align-items: flex-start;
     align-self: flex-end;
     display: flex;
-    gap: 40px;
+    gap: 2.5rem;
     position: relative;
-    width: 1680px;
+    width: 105rem;
 }
 
 .frame-14 {
@@ -82,8 +82,8 @@ screen a {
     border-radius: 20px;
     display: flex;
     flex: 1;
-    gap: 10px;
-    padding: 10px 50px;
+    gap: 0.625rem;
+    padding: 0.625rem 3.125rem;
     position: relative;
 }
 
@@ -98,7 +98,7 @@ screen a {
 .frame-15 {
     align-items: flex-start;
     display: flex;
-    gap: 20px;
+    gap: 1.25rem;
     position: relative;
     width: fit-content;
 }
@@ -108,12 +108,12 @@ screen a {
     background-color: var (--secondary);
     border-radius: 20px;
     display: flex;
-    gap: 40px;
-    height: 100px;
+    gap: 2.5rem;
+    height: 6.25rem;
     justify-content: center;
-    padding: 20px 20px 20px 40x;
+    padding: 1.25rem 1.25rem 1.25rem 2.5rem;
     position: relative;
-    width: 482px;
+    width: 30.125rem;
 }
 
 .inscription {
