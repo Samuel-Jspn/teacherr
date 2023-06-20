@@ -26,6 +26,15 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/sensors', sensorRouter);
 app.use('/auth', authRoutes);
 
+
+const mongoDataRoutes = require('./routemongo');
+app.use('/api/mongoData', mongoDataRoutes);
+
+const bodyParser = require('body-parser');
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
+
+
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   next(createError(404));
