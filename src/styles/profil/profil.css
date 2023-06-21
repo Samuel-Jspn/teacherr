@@ -5,15 +5,19 @@
   grid-template-columns: 5% 40% 10% 40% 5%;
 }
 
+#profile h1,
+h2 {
+  color: var(--color-dark-brown);
+  font-family: Montserrat;
+}
+
 .profile-infos {
-  /* display: grid;
-  grid-template-columns: 5% 40% 10% 40% 5%; */
+  grid-column: 2;
   margin-top: 5em;
   width: 100%;
 }
 
 .profile-component {
-  /* filter: drop-shadow(5px 5px 5px var(--color-dark-brown)); */
   background-color: var(--color-skin);
   border-radius: 15px;
   color: var(--color-dark-brown);
@@ -32,18 +36,10 @@
   border-radius: 50%;
 }
 
-/* .edit-icon {
-  position: relative;
-  float: right;
-} */
-
 .password .psw {
   background-color: transparent;
   pointer-events: none;
   border: none;
-  /* justify-content: center; */
-  /* align-items: center; */
-  /* align-content: center; */
   text-align: center;
 }
 
@@ -99,13 +95,9 @@
 
 .profile-buttons > .delete-btn:hover {
   cursor: pointer;
-  border: 2px solid var(--color-warning);
-  transition: 0.5s ease;
-  /* color: var(--color-skin); */
-}
-
-.profile-icons {
-  /* margin-left: 1rem; */
+  color: var(--color-light);
+  background: var(--color-warning);
+  transition: 0.3s;
 }
 
 .edit-btn {
@@ -114,5 +106,10 @@
   align-items: center;
 }
 
-.edit-btn i {
+/* History part */
+
+.profile-history {
+  grid-column: 4;
+  margin-top: 5em;
+  width: 100%;
 }
