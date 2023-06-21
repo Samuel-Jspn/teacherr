@@ -9,7 +9,7 @@ const Teacher = ({ title, level, description }) => {
     const [data, setData] = useState([]);
 
     useEffect(() => {
-        axios.get('http://localhost:3000/api/mongoData',)
+        axios.get('http://localhost:3000/api/mongoDataTeacher',)
         .then((response) => {
             setData(response.data);
             console.log(data);
@@ -20,16 +20,18 @@ const Teacher = ({ title, level, description }) => {
     }, []);
 
     return (
-        <div className='conteneur'>
+        <>
+        {data.map((item) => (
+        <div className='conteneur' key={item._id}>
             <form action="" method="post" className="teacherForm">
                 <div id="entete">
                     <img className="profile-picture" src={anonymous} />
-                    <h1 className="title_teacher">{title}</h1>
+                    <h1 className="title_teacher">Professeur en {item.subject}</h1>
                 </div>
                 <div className='block'>
                     <div className="infos">
-                        <div>{level}</div>
-                        <p className="info-description">{description}</p>
+                        <div>{item.level}</div>
+                        <p className="info-description">{item.description}</p>
                     </div>
                     <div className="button-container">
                         <button className="button">
@@ -37,17 +39,10 @@ const Teacher = ({ title, level, description }) => {
                         </button>
                     </div>
                 </div>
-                <div>
-      {/* Affichez les données récupérées */}
-      {data.map((item) => (
-        <div>
-          {/* Affichez les propriétés de chaque élément */}
-          <p>{item.level}</p>
-        </div>
-      ))}
-    </div>
             </form>
         </div>  
+        ))}
+    </>
     );
 };
 

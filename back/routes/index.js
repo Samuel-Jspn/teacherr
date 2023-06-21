@@ -27,8 +27,11 @@ app.use('/sensors', sensorRouter);
 app.use('/auth', authRoutes);
 
 
-const mongoDataRoutes = require('./routemongo');
-app.use('/api/mongoData', mongoDataRoutes);
+const mongoDataRoutesTeacher = require('./teacherRoute');
+app.use('/api/mongoDataTeacher', mongoDataRoutesTeacher);
+
+const mongoDataRoutesStudent = require('./studentRoute');
+app.use('/api/mongoDataStudent', mongoDataRoutesStudent);
 
 const bodyParser = require('body-parser');
 app.use(bodyParser.json());

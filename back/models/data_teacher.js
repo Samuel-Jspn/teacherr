@@ -21,7 +21,7 @@ const dataSchema = new mongoose.Schema({
   },
 });
 
-const Data = mongoose.model('components', dataSchema);
+const Data = mongoose.model('teachers', dataSchema);
 
 module.exports = Data;
  

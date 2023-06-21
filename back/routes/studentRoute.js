@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const Data = require('../models/mongodata');
+const Data = require('../models/data_student');
 
 // Récupérer toutes les données
 router.get('/', (req, res) => {
