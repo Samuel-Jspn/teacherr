@@ -13,7 +13,7 @@
 }
 
 .profile-component {
-  border: var(--color-dark-brown) dashed 1px;
+  /* filter: drop-shadow(5px 5px 5px var(--color-dark-brown)); */
   background-color: var(--color-skin);
   border-radius: 15px;
   color: var(--color-dark-brown);
@@ -54,8 +54,7 @@
   justify-content: center;
 }
 
-.profile-buttons > .edit-btn,
-.profile-buttons > .delete-btn {
+.profile-buttons > .edit-btn {
   display: block;
   justify-content: center;
   align-items: center;
@@ -73,12 +72,36 @@
   color: var(--color-dark-brown);
 }
 
-.profile-buttons > .edit-btn:hover,
-.profile-buttons > .delete-btn:hover {
+.profile-buttons > .edit-btn:hover {
   cursor: pointer;
   background: var(--color-dark-brown);
   transition: 0.5s;
   color: var(--color-skin);
+}
+
+.profile-buttons > .delete-btn {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  background: var(--color-skin);
+  height: 5rem;
+  width: 12rem;
+  border: none;
+  outline: none;
+  border-radius: 1.25rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-family: "Montserrat";
+  font-weight: 900;
+  font-size: 1.5rem;
+  color: var(--color-warning);
+}
+
+.profile-buttons > .delete-btn:hover {
+  cursor: pointer;
+  border: 2px solid var(--color-warning);
+  transition: 0.5s ease;
+  /* color: var(--color-skin); */
 }
 
 .profile-icons {
@@ -89,4 +112,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.edit-btn i {
 }

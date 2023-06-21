@@ -48,19 +48,8 @@ function home() {
             {/* <input type={passwordShown ? "text" : "password"} /> */}
             {/* <button onClick={togglePassword}>{BsEye}</button> */}
             <div className="profile-buttons">
-              <button class="edit-btn">
-                <div>
-                  <span>Éditer</span>
-                </div>
-                <div>
-                  {/* <FaEdit className="profile-icons" /> */}
-                  {/* <FontAwesomeIcon icon="fa-solid fa-pen-to-square" /> */}
-                  <i class="fa-solid fa-pen-to-square"></i>
-                </div>
-              </button>
-              <button class="delete-btn">
-                Supprimer <FaTrash />
-              </button>
+              <button class="edit-btn">Éditer</button>
+              <button class="delete-btn">Supprimer</button>
             </div>
             {/* Ajouter div 2 boutons éditer et supprimer */}
           </div>
