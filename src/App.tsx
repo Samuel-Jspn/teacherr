@@ -4,6 +4,7 @@ import Connection from "./pages/connection";
 import Inscription from "./pages/inscription";
 import Accueil from "./pages/accueil";
 import Profil from "./pages/profil";
+import Mentions from "./pages/mentions";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
           <Route path="/auth/register" element={<Inscription />} />
           <Route path="/home" element={<Home />} />
           <Route path="/profil" element={<Profil />} />
+          <Route path="/mentions" element={<Mentions />} />
         </Routes>
       </div>
   );

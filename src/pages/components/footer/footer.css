@@ -22,7 +22,8 @@
   text-decoration: none;
   margin: 0px;
   padding: 0px;
-  gap: 2rem;
+  gap: 15px;
+  color: var(--color-dark-brown);
 }
 
 .footer > .copyright {
@@ -32,10 +33,15 @@
 .copyright > p {
   display: flex;
   justify-content: center;
+  font-weight: 600;
+  color: var(--color-dark-brown);
 }
 
 .footer-links > ul > li > a {
   list-style: none;
   text-decoration: none;
   text-align: center;
+  font-size: 30px;
+  font-weight: 500;
+  color: var(--color-dark-brown);
 }

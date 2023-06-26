@@ -18,7 +18,7 @@ const user = [
   },
 ];
 
-function home() {
+function profil() {
   // const togglePassword = () => {
   //   setPasswordShown(!passwordShown);
   // };
@@ -87,4 +87,4 @@ function home() {
   );
 }
 
-export default home;
+export default profil;
