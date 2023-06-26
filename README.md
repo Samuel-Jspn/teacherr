@@ -1,3 +1,16 @@
+
+<p align="center">
+ <img src="src\pages\assets\teacherrLogo.png" alt="Logo" width="250" align-items="center">
+ </p>
+
+
+<p align="center">
+    <a>
+    <img src="https://img.shields.io/npm/v/react?label=version%20react"/>
+    <img src="https://img.shields.io/badge/stability-wip-lightgrey.svg"/>
+    </a>
+ </p>
+
 # Documentation de Teacherr
 
 Teacherr est une application de mise en relation de tuteurs et d'étudiants pour du soutien scolaire en ligne. Cette documentation fournit des informations détaillées sur l'application et ses fonctionnalités, ainsi que des instructions sur la manière de l'utiliser.
