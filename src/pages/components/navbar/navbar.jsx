@@ -8,10 +8,14 @@ const Navbar = () => {
   return (
     <div className="navbar">
       <div className="logos">
-        <img className="navbar-image" src={teacherrLogo} />
+        <a href="./home">
+          <img className="navbar-image" src={teacherrLogo} />
+        </a>
       </div>
       <div className="navbar-right">
-        <img className="profile-picture" src={anonymous} />
+        <a href="./profil">
+          <img className="profile-picture" src={anonymous} />
+        </a>
       </div>
     </div>
   );

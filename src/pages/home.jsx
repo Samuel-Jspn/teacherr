@@ -1,5 +1,6 @@
 import React from "react";
 import Navbar from "./components/navbar/navbar.jsx";
+import Footer from "./components/footer/footer.jsx";
 import "../styles/home/home.css";
 import Teacher from "./components/teacher/teacher.jsx";
 import Student from "./components/student/student.jsx";
@@ -48,6 +49,7 @@ function home() {
         />
         <Student title="Elève d'anglais" level="Bac +3" description="Test" />
       </section>
+      <Footer />
     </>
   );
 }
