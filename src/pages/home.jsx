@@ -1,9 +1,10 @@
-import React from "react";
+import react from 'react';
 import Navbar from "./components/navbar/navbar.jsx";
 import Footer from "./components/footer/footer.jsx";
 import "../styles/home/home.css";
 import Teacher from "./components/teacher/teacher.jsx";
 import Student from "./components/student/student.jsx";
+import RatingForm from './components/Note/note.jsx';
 import prof1 from "./assets/prof1.jpg";
 import prof2 from "./assets/prof2.png";
 import prof3 from "./assets/prof3.jpg";
@@ -11,6 +12,7 @@ import prof4 from "./assets/prof4.png";
 import prof5 from "./assets/prof5.jpg";
 
 function home() {
+
   return (
     <>
       <div className="home-div">
@@ -49,6 +51,8 @@ function home() {
         />
         <Student title="Elève d'anglais" level="Bac +3" description="Test" />
       </section>
+
+<RatingForm />
       <Footer />
     </>
   );

@@ -3,21 +3,21 @@ import "./student.css";
 
 const Student = ({ title, level, description }) => {
     return (
-        <div className='conteneur'>
-            <form action="" method="post" className="teacherForm">
+        <div className='Sconteneur'>
+            <form action="" method="post" className="studentForm">
                 <div id="entete">
-                    <h1 className="title_teacher">{title}</h1>
+                    <h1 className="title_student">{title}</h1>
                 </div>
-                <div className='block'>
-                    <div className="infos">
+                <div className='Sblock'>
+                    <div className="Sinfos">
                         <div>{level}</div>
-                        <p className="info-description">{description}</p>
+                        <p className="Sinfo-description">{description}</p>
                     </div>
-                    <div className="button-container">
-                        <button className="button">
+                    <div className="Sbutton-container">
+                        <button className="Sbutton">
                             Accepter rdv
                         </button>
-                        <button className="button">
+                        <button className="Sbutton">
                             Refuser rdv
                         </button>
                     </div>
