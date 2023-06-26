@@ -2,6 +2,40 @@
 
 Teacherr est une application de mise en relation de tuteurs et d'étudiants pour du soutien scolaire en ligne. Cette documentation fournit des informations détaillées sur l'application et ses fonctionnalités, ainsi que des instructions sur la manière de l'utiliser.
 
+## Mise en place de l'environnement
+Afin de pouvoir lancer l'application sur votre machine il vous faudra dans un premier temps télécharger [NodeJS](https://nodejs.org/en/download "Lien pour télécharger NodeJS").
+
+Une fois installé sur votre machine, vous allez devoir installer react-scripts. pour se faire, lancez un invité de commande ou PowerShell et tapez la ligne suivante
+
+> npm install react-scripts
+
+Ceci installera le paquet nécassaire au lancement de l'application front.
+
+Ensuite, vous pourrez [télécharger le projet](https://github.com/Samuel-Jspn/teacherr/archive/refs/heads/main.zip "Lien de téléchargement du projet en .zip").
+
+Après avoir téléchargé le projet, rendez vous à l'emplacement du projet extrait via l'invité de commande.
+
+> cd /chemin/vers/le/projet
+
+Une fois dans le projet, déplacez vous dans le dossier back
+
+> cd back
+
+Et lancez le back.
+
+> npm start
+
+ou avec
+
+>npm run start
+
+Ouvrez un second invité de commandes, rendez vous dans le projet et lancez cette fois le front.
+
+>npm start
+
+ou avec
+
+>npm run start
 ## Fonctionnalités
 
 ### Pour les élèves
