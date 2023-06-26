@@ -3,7 +3,6 @@ import Navbar from "./components/navbar/navbar.jsx";
 import "../styles/home/home.css";
 import Teacher from "./components/teacher/teacher.jsx";
 import Student from "./components/student/student.jsx";
-import Popups from './components/Popup/Popups.jsx';
 import RatingForm from './components/Note/note.jsx';
 
 function home() {
