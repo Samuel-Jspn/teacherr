@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "../styles/profil/profil.css";
 import { Link } from "react-router-dom";
 import anonymous from "./assets/anonymous.jpg";
+import user1 from "./assets/user1.png";
 import Navbar from "./components/navbar/navbar.jsx";
 import History from "./components/history/history.jsx";
 
@@ -33,7 +34,7 @@ function home() {
         <div className="profile-component">
           <div>
             <div className="profile-images">
-              <img className="profile-picture" src={anonymous} />
+              <img className="profile-picture" src={user1} />
             </div>
           </div>
           <h1>Gérard BERTRAND</h1>
