@@ -48,7 +48,7 @@ return (
               <p>Je me connecte</p>
             </div>
           </button>
-          <Link to="/inscription">
+          <Link to="/auth/register">
             <div className="inscription">
               Nouveau sur la plateforme ? C'est par ici !
             </div>

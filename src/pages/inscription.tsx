@@ -98,7 +98,7 @@ const items = [
             <button type = "submit" className="create">
               <p>Je crée mon compte</p>
             </button>
-            <Link to="/connection">
+            <Link to="/auth/login">
               <div className="registration">
                 Déjà membre de la plateforme ? C'est par ici !
               </div>
