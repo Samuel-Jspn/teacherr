@@ -1,11 +1,12 @@
-import React from "react";
+import react from 'react';
+import Popups from './components/Popup/Popups.jsx';
 import Navbar from "./components/navbar/navbar.jsx";
 import "../styles/home/home.css";
 import Teacher from "./components/teacher/teacher.jsx";
 import Student from "./components/student/student.jsx";
-import Calendar from "./components/Calendar/Calendar.jsx";
 
 function home() {
+
   return (
     <>
       <div><Navbar /></div>
@@ -18,7 +19,7 @@ function home() {
       <Student title="Elève d'anglais" level="Bac +3" description="Test" />     
       </section>
 
-      <Calendar />
+      <Popups />
 
     </>
   );
