@@ -3,6 +3,7 @@ import "./navbar.css";
 import teacherr from "../../assets/teacherr.png";
 import teacherrLogo from "../../assets/teacherrLogo.png";
 import anonymous from "../../assets/anonymous.jpg";
+import user1 from "../../assets/user1.png";
 
 const Navbar = () => {
   return (
@@ -14,7 +15,7 @@ const Navbar = () => {
       </div>
       <div className="navbar-right">
         <a href="./profil">
-          <img className="profile-picture" src={anonymous} />
+          <img className="profile-picture" src={user1} />
         </a>
       </div>
     </div>
