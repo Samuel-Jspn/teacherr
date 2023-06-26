@@ -7,7 +7,7 @@ Afin de pouvoir lancer l'application sur votre machine il vous faudra dans un pr
 
 Une fois installé sur votre machine, vous allez devoir installer react-scripts. pour se faire, lancez un invité de commande ou PowerShell et tapez la ligne suivante
 
-> npm install react-scripts
+`npm install react-scripts`
 
 Ceci installera le paquet nécassaire au lancement de l'application front.
 
@@ -15,27 +15,27 @@ Ensuite, vous pourrez [télécharger le projet](https://github.com/Samuel-Jspn/t
 
 Après avoir téléchargé le projet, rendez vous à l'emplacement du projet extrait via l'invité de commande.
 
-> cd /chemin/vers/le/projet
+`cd /chemin/vers/le/projet`
 
 Une fois dans le projet, déplacez vous dans le dossier back
 
-> cd back
+`cd back`
 
 Et lancez le back.
 
-> npm start
+`npm start`
 
 ou avec
 
->npm run start
+`npm run start`
 
 Ouvrez un second invité de commandes, rendez vous dans le projet et lancez cette fois le front.
 
->npm start
+`npm start`
 
 ou avec
 
->npm run start
+`npm run start`
 ## Fonctionnalités
 
 ### Pour les élèves
