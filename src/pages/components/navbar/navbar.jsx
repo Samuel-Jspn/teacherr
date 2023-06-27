@@ -3,15 +3,20 @@ import "./navbar.css";
 import teacherr from "../../assets/teacherr.png";
 import teacherrLogo from "../../assets/teacherrLogo.png";
 import anonymous from "../../assets/anonymous.jpg";
+import user1 from "../../assets/user1.png";
 
 const Navbar = () => {
   return (
     <div className="navbar">
       <div className="logos">
-        <img className="navbar-image" src={teacherrLogo} />
+        <a href="./home">
+          <img className="navbar-image" src={teacherrLogo} />
+        </a>
       </div>
       <div className="navbar-right">
-        <img className="profile-picture" src={anonymous} />
+        <a href="./profil">
+          <img className="profile-picture" src={user1} />
+        </a>
       </div>
     </div>
   );

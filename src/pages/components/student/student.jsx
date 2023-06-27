@@ -20,21 +20,21 @@ const Student = ({ title, level, description }) => {
     return (
         <>
         {data.map((item) => (
-        <div className='conteneur' key={item._id}>
-            <form action="" method="post" className="teacherForm">
+        <div className='Sconteneur' key={item._id}>
+            <form action="" method="post" className="studentForm">
                 <div id="entete">
-                    <h1 className="title_teacher">{item.nom} {item.prenom}</h1>
+                    <h1 className="title_student">{item.nom} {item.prenom}</h1>
                 </div>
-                <div className='block'>
-                    <div className="infos">
+                <div className='Sblock'>
+                    <div className="Sinfos">
                         <div>{item.level}</div>
-                        <p className="info-description">{item.description}</p>
+                        <p className="Sinfo-description">{item.description}</p>
                     </div>
-                    <div className="button-container">
-                        <button className="button">
+                    <div className="Sbutton-container">
+                        <button className="Sbutton">
                             Accepter rdv
                         </button>
-                        <button className="button">
+                        <button className="Sbutton">
                             Refuser rdv
                         </button>
                     </div>

@@ -1,6 +1,58 @@
+
+<p align="center">
+ <img src="src\pages\assets\teacherrLogo.png" alt="Logo" width="250" align-items="center">
+ </p>
+
+
+<p align="center">
+    <a>
+    <img src="https://img.shields.io/npm/v/react?label=version%20react"/>
+    <img src="https://img.shields.io/badge/stability-wip-lightgrey.svg"/>
+    </a>
+ </p>
+
 # Documentation de Teacherr
 
 Teacherr est une application de mise en relation de tuteurs et d'étudiants pour du soutien scolaire en ligne. Cette documentation fournit des informations détaillées sur l'application et ses fonctionnalités, ainsi que des instructions sur la manière de l'utiliser.
+
+## Mise en place de l'environnement
+Afin de pouvoir lancer l'application sur votre machine, il vous faudra dans un premier temps télécharger [NodeJS](https://nodejs.org/en/download "Lien pour télécharger NodeJS").
+
+Une fois installé sur votre machine, vous allez devoir installer react-scripts. Pour se faire, lancez un invité de commandes ou PowerShell et tapez la ligne suivante
+
+`npm install react-scripts`
+
+Ceci installera le paquet nécassaire au lancement de l'application front.
+
+Ensuite, vous pourrez [télécharger le projet](https://github.com/Samuel-Jspn/teacherr/archive/refs/heads/main.zip "Lien de téléchargement du projet en .zip").
+
+Il faut également sur votre machine, une base de donnée Mysql, nomée "Teacherr" avec comme nom d'utilisateur "root" et mot de passe "root". Ces données peuvent etre modifiées comme vous le souhaitez via le fichier `bdd.js`. 
+
+Il est possible d'installer facilement une base de donnée MySQL grâce à des outils tels que [MySQL Workench](https://dev.mysql.com/doc/workbench/en/ "Lien vers la documentation MySQL Workbench").
+
+Après avoir téléchargé le projet et MySQL, rendez vous à l'emplacement du projet extrait via l'invité de commandes.
+
+`cd /chemin/vers/le/projet`
+
+Une fois dans le projet, déplacez vous dans le dossier back
+
+`cd back`
+
+Et lancez le back.
+
+`npm start`
+
+ou avec
+
+`npm run start`
+
+Ouvrez un second invité de commandes, rendez vous dans le projet et lancez cette fois le front.
+
+`npm start`
+
+ou avec
+
+`npm run start`
 
 ## Fonctionnalités
 

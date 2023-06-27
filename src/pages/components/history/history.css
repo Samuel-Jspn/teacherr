@@ -1,0 +1,108 @@
+.div-history {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  margin-bottom: 1%;
+}
+
+.historyForm {
+  background-color: var(--color-skin);
+  border-radius: 15px;
+  min-width: 100%;
+}
+
+#h-titles {
+  display: flex;
+  align-items: center; /* Alignement vertical */
+  margin: 5px;
+}
+
+.course-name {
+  font-size: 20px;
+  font-weight: normal;
+  padding: 1%;
+  color: var(--color-dark-brown);
+}
+
+.history-informations {
+  margin: 10px;
+}
+
+.history-informations > .infos > div {
+  color: var(--color-dark-brown);
+}
+
+.info-description {
+  text-align: justify;
+  color: var(--color-dark-brown);
+  width: 90%;
+  font-size: 13px;
+  margin: 5px;
+}
+
+.h-button-container {
+  display: flex;
+  justify-content: end;
+  gap: 1rem;
+}
+
+.h-button-access {
+  border: none;
+  background: none;
+  font-family: "Montserrat", sans-serif;
+  color: var(--color-dark-brown);
+  font-size: 15px;
+  background-color: var(--color-buff);
+  border-radius: 15px;
+  padding: 10px;
+}
+
+.h-button-access:hover {
+  background-color: var(--color-dark-brown);
+  color: var(--color-skin);
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.h-button-delete {
+  border: none;
+  background: none;
+  font-family: "Montserrat", sans-serif;
+  color: var(--color-warning);
+  margin-right: 1rem;
+  font-size: 15px;
+  border-radius: 15px;
+  padding: 10px;
+}
+
+.h-button-delete:hover {
+  color: var(--color-light);
+  background: var(--color-warning);
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .history-informations > div > div {
+    margin: 10px;
+    font-size: 20px;
+  }
+
+  .info-description {
+    width: 95%;
+    font-size: 18px;
+    margin: 10px;
+  }
+
+  .h-button-access,
+  .h-button-delete {
+    font-size: 20px;
+    margin-top: 1%;
+  }
+
+  .course-name {
+    font-size: 30px;
+  }
+}

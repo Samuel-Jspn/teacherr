@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from "react";
 import "./teacher.css";
 import anonymous from "../../assets/anonymous.jpg";
-
+import Popups from "../Popup/Popups.jsx";
 import axios from 'axios';
-
 
 const Teacher = ({ title, level, description }) => {
     const [data, setData] = useState([]);
@@ -22,21 +21,21 @@ const Teacher = ({ title, level, description }) => {
     return (
         <>
         {data.map((item) => (
-        <div className='conteneur' key={item._id}>
+        <div className='Tconteneur' key={item._id}>
             <form action="" method="post" className="teacherForm">
                 <div id="entete">
-                    <img className="profile-picture" src={item.image}/>
+                    <img className="Tprofile-picture" src={item.image}/>
                     <script>console.log(item.image)</script>
                     <h1 className="title_teacher">Professeur en {item.subject}</h1>
                 </div>
-                <div className='block'>
-                    <div className="infos">
+                <div className='Tblock'>
+                    <div className="Tinfos">
                         <div>{item.level}</div>
-                        <p className="info-description">{item.description}</p>
+                        <p className="Tinfo-description">{item.description}</p>
                     </div>
-                    <div className="button-container">
-                        <button className="button">
-                            Prendre rdv
+                    <div className="Tbutton-container">
+                        <button className="Tbutton">
+                            <Popups />
                         </button>
                     </div>
                 </div>

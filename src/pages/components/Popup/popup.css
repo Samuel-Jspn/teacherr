@@ -1,0 +1,24 @@
+.btn-popup {
+    border: none;
+    background: none;
+    font-family: "Montserrat", sans-serif;
+    color: var(--color-dark-brown);
+    font-size: 15px;
+    background-color: var(--color-buff);
+    border-radius: 15px;
+    padding: 10px;
+  }
+  
+.btn-popup:hover {
+    background-color: var(--color-dark-brown);
+    color: var(--color-skin);
+    transition: 0.5s;
+    cursor: pointer;  
+}
+  
+@media (min-width: 768px) {
+    .btn-popup {
+        font-size: 20px;
+        margin-top: 1%;
+    }
+}
