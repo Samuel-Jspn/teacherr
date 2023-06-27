@@ -17,11 +17,11 @@ h2 {
 }
 
 .preview-icon {
-  width: 20%;
+  width: 20rem;
 }
 
 .preview-logo {
-  width: 25%;
+  width: 25rem;
 }
 
 .lien-btn {
@@ -51,4 +51,8 @@ h2 {
   background: var(--color-dark-brown);
   transition: 0.5s;
   color: var(--color-skin);
+}
+
+@media (min-width: 768px) {
+  
 }

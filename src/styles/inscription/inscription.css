@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,700,900");
 
 .iAll {
@@ -8,7 +9,7 @@
 
 .zoom {
   zoom: 80%;
-  min-width:fit-content;
+  min-width: fit-content;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -96,6 +97,10 @@
   border-radius: 0.2rem;
 }
 
+.iChampRenseignemants > input::placeholder {
+  font-size: 1.5rem;
+}
+
 .iAll .create {
   display: flex;
   width: 100%;
@@ -106,7 +111,6 @@
   border: none;
   outline: none;
   justify-content: center;
-  
 }
 
 .create p {
@@ -134,8 +138,6 @@
   color: var(--color-buff);
   margin-bottom: 2rem;
 }
-
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap");
 
 .sec-center {
   position: relative;
@@ -287,4 +289,36 @@
 
 .iDropdown {
   width: 100%;
+}
+
+/*    ================= MEDIAS (very small size) =======================    */
+
+@media (min-width: 360px) {
+  .iAll > .zoom {
+    zoom: 50%;
+  }
+}
+
+/*    ================= MEDIAS (small size) =======================    */
+
+@media (min-width: 768px) {
+  .iAll > .zoom {
+    width: 10rem;
+  }
+}
+
+/*    ================= MEDIAS (medium size) =======================    */
+
+@media (min-width: 1024px) {
+  .iAll > .zoom {
+    zoom: 65%;
+  }
+}
+
+/*    ================= MEDIAS (medium size) =======================    */
+
+@media (min-width: 1280px) {
+  .iAll > .zoom {
+    zoom: 80%;
+  }
 }

@@ -5,6 +5,7 @@ import anonymous from "./assets/anonymous.jpg";
 import user1 from "./assets/user1.png";
 import Navbar from "./components/navbar/navbar.jsx";
 import History from "./components/history/history.jsx";
+import Footer from "./components/footer/footer.jsx";
 
 const password = "MotdepasseTest123";
 

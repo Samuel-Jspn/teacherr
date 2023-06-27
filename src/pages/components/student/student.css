@@ -9,23 +9,10 @@
   color: var(--color-dark-brown);
 }
 
-@media (min-width: 768px) {
-  .title_student {
-    font-size: 30px;
-  }
-}
-
 .Sblock > div > div {
   margin: 0.313rem;
   font-size: 15px;
   color: var(--color-dark-brown);
-}
-
-@media (min-width: 768px) {
-  .Sblock > div > div {
-    margin: 0.625rem;
-    font-size: 20px;
-  }
 }
 
 .Sinfo-description {
@@ -36,17 +23,9 @@
   margin: 0.313rem;
 }
 
-@media (min-width: 768px) {
-  .Sinfo-description {
-    width: 95%;
-    font-size: 18px;
-    margin: 0.625rem;
-  }
-}
-
 .Sbutton-container {
   display: flex;
-  justify-content: end; 
+  justify-content: end;
 }
 
 .Sbutton {
@@ -67,14 +46,7 @@
   background-color: var(--color-dark-brown);
   color: var(--color-skin);
   transition: 0.5s;
-  cursor: pointer;  
-}
-
-@media (min-width: 768px) {
-  .Sbutton {
-    font-size: 20px;
-    margin-top: 1%;
-  }
+  cursor: pointer;
 }
 
 .Sconteneur {
@@ -84,7 +56,6 @@
   width: 95%;
   height: auto;
   margin: 2.5%;
-  
 }
 
 .studentForm {
@@ -103,4 +74,26 @@
   display: flex;
   align-items: center; /* Alignement vertical */
   margin: 0.313rem;
+}
+
+@media (min-width: 768px) {
+  .title_student {
+    font-size: 30px;
+  }
+
+  .Sinfo-description {
+    width: 95%;
+    font-size: 18px;
+    margin: 0.625rem;
+  }
+
+  .Sbutton {
+    font-size: 20px;
+    margin-top: 1%;
+  }
+
+  .Sblock > div > div {
+    margin: 0.625rem;
+    font-size: 20px;
+  }
 }
