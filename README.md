@@ -16,9 +16,9 @@
 Teacherr est une application de mise en relation de tuteurs et d'étudiants pour du soutien scolaire en ligne. Cette documentation fournit des informations détaillées sur l'application et ses fonctionnalités, ainsi que des instructions sur la manière de l'utiliser.
 
 ## Mise en place de l'environnement
-Afin de pouvoir lancer l'application sur votre machine il vous faudra dans un premier temps télécharger [NodeJS](https://nodejs.org/en/download "Lien pour télécharger NodeJS").
+Afin de pouvoir lancer l'application sur votre machine, il vous faudra dans un premier temps télécharger [NodeJS](https://nodejs.org/en/download "Lien pour télécharger NodeJS").
 
-Une fois installé sur votre machine, vous allez devoir installer react-scripts. pour se faire, lancez un invité de commande ou PowerShell et tapez la ligne suivante
+Une fois installé sur votre machine, vous allez devoir installer react-scripts. Pour se faire, lancez un invité de commandes ou PowerShell et tapez la ligne suivante
 
 `npm install react-scripts`
 
@@ -26,7 +26,11 @@ Ceci installera le paquet nécassaire au lancement de l'application front.
 
 Ensuite, vous pourrez [télécharger le projet](https://github.com/Samuel-Jspn/teacherr/archive/refs/heads/main.zip "Lien de téléchargement du projet en .zip").
 
-Après avoir téléchargé le projet, rendez vous à l'emplacement du projet extrait via l'invité de commande.
+Il faut également sur votre machine, une base de donnée Mysql, nomée "Teacherr" avec comme nom d'utilisateur "root" et mot de passe "root". Ces données peuvent etre modifiées comme vous le souhaitez via le fichier `bdd.js`. 
+
+Il est possible d'installer facilement une base de donnée MySQL grâce à des outils tels que [MySQL Workench](https://dev.mysql.com/doc/workbench/en/ "Lien vers la documentation MySQL Workbench").
+
+Après avoir téléchargé le projet et MySQL, rendez vous à l'emplacement du projet extrait via l'invité de commandes.
 
 `cd /chemin/vers/le/projet`
 
@@ -50,11 +54,6 @@ ou avec
 
 `npm run start`
 
-Il faut également sur votre machine, une base de donnée Mysql, nomée "Teacherr" avec comme com d'utilisateur "root" et mot de passe "root" ces données peuvent etre modifiée comme vous le souhaitez via le fichier `bdd.js`. 
-
-Il est possible d'installer facilement une base de donnée MySQL grace a des outils tel que MySQL Workench. 
-
-[Documentation MySQL Workbench] (https://dev.mysql.com/doc/workbench/en/)
 ## Fonctionnalités
 
 ### Pour les élèves
