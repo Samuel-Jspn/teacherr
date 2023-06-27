@@ -60,10 +60,10 @@
 }
 
 .com {
-  display: flex;
-  width: 95%;
-  margin-left: 2.5%;
-  margin-right: 2.5%;
+  display: block;
+  margin: auto;
+  width: 70%;
+  height: 3rem;
   padding: 0;
   margin-bottom: 2rem;
   background-color: var(--color-tea);
