@@ -49,6 +49,12 @@ Ouvrez un second invité de commandes, rendez vous dans le projet et lancez cett
 ou avec
 
 `npm run start`
+
+Il faut également sur votre machine, une base de donnée Mysql, nomée "Teacherr" avec comme com d'utilisateur "root" et mot de passe "root" ces données peuvent etre modifiée comme vous le souhaitez via le fichier `bdd.js`. 
+
+Il est possible d'installer facilement une base de donnée MySQL grace a des outils tel que MySQL Workench. 
+
+[Documentation MySQL Workbench] (https://dev.mysql.com/doc/workbench/en/)
 ## Fonctionnalités
 
 ### Pour les élèves
