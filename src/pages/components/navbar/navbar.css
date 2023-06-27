@@ -14,10 +14,6 @@
   width: 75px;
 }
 
-a {
-  text-decoration: none;
-}
-
 .navbar a {
   padding-right: 10px;
   color: var(--color-dark-brown);
@@ -40,4 +36,13 @@ a {
 .navbar-right {
   display: flex;
   justify-content: end;
+}
+
+.logos {
+  display: flex;
+  justify-content: start;
+}
+
+.navbar > .logos > img {
+  cursor: pointer;
 }

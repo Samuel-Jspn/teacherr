@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat: 900, 400, 700, 600, 500, 900italic");
+
+#profile {
+  display: grid;
+  grid-template-columns: 5% 40% 10% 40% 5%;
+}
+
+#profile h1,
+h2 {
+  color: var(--color-dark-brown);
+  font-family: Montserrat;
+}
+
+.profile-infos {
+  grid-column: 2;
+  margin-top: 5em;
+  width: 100%;
+}
+
+.profile-component {
+  background-color: var(--color-skin);
+  border-radius: 15px;
+  color: var(--color-dark-brown);
+  padding-bottom: 15px;
+  text-align: center;
+}
+
+.profile-images {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.profile-picture {
+  height: 150px;
+  border-radius: 50%;
+}
+
+.password .psw {
+  background-color: transparent;
+  pointer-events: none;
+  border: none;
+  text-align: center;
+}
+
+.profile-buttons {
+  max-height: 2%;
+  display: flex;
+  gap: 3rem;
+  justify-content: center;
+}
+
+.profile-buttons > .edit-btn {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  background: var(--color-buff);
+  height: 5rem;
+  width: 12rem;
+  border: none;
+  outline: none;
+  border-radius: 1.25rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-family: "Montserrat";
+  font-weight: 900;
+  font-size: 1.5rem;
+  color: var(--color-dark-brown);
+}
+
+.profile-buttons > .edit-btn:hover {
+  cursor: pointer;
+  background: var(--color-dark-brown);
+  transition: 0.5s;
+  color: var(--color-skin);
+}
+
+.profile-buttons > .delete-btn {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  background: var(--color-skin);
+  height: 5rem;
+  width: 12rem;
+  border: none;
+  outline: none;
+  border-radius: 1.25rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-family: "Montserrat";
+  font-weight: 900;
+  font-size: 1.5rem;
+  color: var(--color-warning);
+}
+
+.profile-buttons > .delete-btn:hover {
+  cursor: pointer;
+  color: var(--color-light);
+  background: var(--color-warning);
+  transition: 0.3s;
+}
+
+.edit-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* History part */
+
+.profile-history {
+  grid-column: 4;
+  margin-top: 5em;
+  width: 100%;
+}

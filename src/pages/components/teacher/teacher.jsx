@@ -3,12 +3,12 @@ import "./teacher.css";
 import anonymous from "../../assets/anonymous.jpg";
 import Popups from "../Popup/Popups.jsx";
 
-const Teacher = ({ title, level, description }) => {
+const Teacher = ({ title, level, description, picture }) => {
     return (
         <div className='Tconteneur'>
             <form action="" method="post" className="teacherForm">
                 <div id="entete">
-                    <img className="Tprofile-picture" src={anonymous} />
+                    <img className="Tprofile-picture" src={picture} />
                     <h1 className="title_teacher">{title}</h1>
                 </div>
                 <div className='Tblock'>

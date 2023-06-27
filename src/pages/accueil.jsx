@@ -16,12 +16,12 @@ function home() {
           <h2>Une application de réservation de cours de tutorat</h2>
         </div>
         <div className="lien-btn">
-          <Link to="/connection">
+          <Link to="/auth/login">
             <button className="redirections">
               <p>Connexion</p>
             </button>
           </Link>
-          <Link to="/inscription">
+          <Link to="/auth/register">
             <button className="redirections">
               <p>Inscription</p>
             </button>
