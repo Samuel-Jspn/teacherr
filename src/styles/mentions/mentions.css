@@ -23,6 +23,7 @@ h3, p {
   align-items: center;
   text-align: center;
   overflow: auto;
+  margin-top: 75px;
 }
 
 #mentions .container-mentions {
