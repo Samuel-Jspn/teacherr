@@ -25,7 +25,8 @@ const Teacher = ({ title, level, description }) => {
         <div className='conteneur' key={item._id}>
             <form action="" method="post" className="teacherForm">
                 <div id="entete">
-                    <img className="profile-picture" src={anonymous} />
+                    <img className="profile-picture" src={item.image}/>
+                    <script>console.log(item.image)</script>
                     <h1 className="title_teacher">Professeur en {item.subject}</h1>
                 </div>
                 <div className='block'>
