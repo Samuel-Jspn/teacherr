@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import "./Calendar.css";
 
 const Calendar = () => {
   const [date, setDate] = useState(new Date());
@@ -70,9 +71,9 @@ const Calendar = () => {
   return (
     <div className="calendar">
       <div className="header">
-        <button onClick={handlePreviousMonth}>&lt;</button>
-        <h2>{getMonthName(date)}</h2>
-        <button onClick={handleNextMonth}>&gt;</button>
+        <button className='btn-fleche' onClick={handlePreviousMonth}>&lt;</button>
+        <h2 className='mois'>{getMonthName(date)}</h2>
+        <button className='btn-fleche' onClick={handleNextMonth}>&gt;</button>
       </div>
       <table>
         <thead>
@@ -80,13 +81,13 @@ const Calendar = () => {
         </thead>
         <tbody>{getCalendarDays()}</tbody>
       </table>
-      <div>
-        <p>Choisir une heure :</p>
-        <input type="time" value={selectedTime} onChange={handleTimeChange} />
+      <div className="selected-hour">
+        <p className="header">Choisir une heure :</p>
+        <input className='heure' type="time" value={selectedTime} onChange={handleTimeChange} />
       </div>
       <div className="selected-date">
-        <p>Date sélectionnée : {selectedDate ? selectedDate.toLocaleDateString('fr-FR') : ''}</p>
-        <p>Heure sélectionnée : {selectedTime}</p>
+        <p className="header">Date sélectionnée : {selectedDate ? selectedDate.toLocaleDateString('fr-FR') : ''}</p>
+        <p className="header">Heure sélectionnée : {selectedTime}</p>
       </div>
     </div>
   );

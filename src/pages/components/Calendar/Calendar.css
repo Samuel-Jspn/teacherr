@@ -1,0 +1,38 @@
+.calendar {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    background-color: var(--color-skin);
+    flex-direction: column;
+    border-radius: 1.25rem;
+    margin-bottom: 2rem;
+    width: fit-content;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+.btn-fleche {
+    background-color: var(--color-skin);
+    border: none;
+    border-radius: 25%;
+}
+
+.header {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.mois {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.heure {
+    display: block;
+    margin: auto;
+    background-color: var(--color-light);
+    border: none;
+    border-radius: 1.25rem;
+}
