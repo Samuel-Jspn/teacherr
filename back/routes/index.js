@@ -29,6 +29,17 @@ app.use(cors());
 //app.use('/users', usersRouter);
 app.use('/sensors', sensorRouter);
 app.use('/auth', authRoutes);
+
+const mongoDataRoutesTeacher = require('./teacherRoute');
+app.use('/api/mongoDataTeacher', mongoDataRoutesTeacher);
+
+const mongoDataRoutesStudent = require('./studentRoute');
+app.use('/api/mongoDataStudent', mongoDataRoutesStudent);
+
+const bodyParser = require('body-parser');
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
+
 app.use('/modif', Profil)
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

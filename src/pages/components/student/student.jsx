@@ -1,17 +1,34 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./student.css";
 
+import axios from 'axios';
+
 const Student = ({ title, level, description }) => {
+    const [data, setData] = useState([]);
+
+    useEffect(() => {
+        axios.get('http://localhost:3000/api/mongoDataStudent',)
+        .then((response) => {
+            setData(response.data);
+            console.log(data);
+        })
+        .catch((error) => {
+            console.error(error);
+        });
+    }, []);
+
     return (
-        <div className='Sconteneur'>
+        <>
+        {data.map((item) => (
+        <div className='Sconteneur' key={item._id}>
             <form action="" method="post" className="studentForm">
                 <div id="entete">
-                    <h1 className="title_student">{title}</h1>
+                    <h1 className="title_student">{item.nom} {item.prenom}</h1>
                 </div>
                 <div className='Sblock'>
                     <div className="Sinfos">
-                        <div>{level}</div>
-                        <p className="Sinfo-description">{description}</p>
+                        <div>{item.level}</div>
+                        <p className="Sinfo-description">{item.description}</p>
                     </div>
                     <div className="Sbutton-container">
                         <button className="Sbutton">
@@ -23,7 +40,9 @@ const Student = ({ title, level, description }) => {
                     </div>
                 </div>
             </form>
-        </div>  
+        </div>
+        ))}
+    </>  
     );
 };
 
