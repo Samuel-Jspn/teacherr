@@ -1,0 +1,149 @@
+.eAll {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2%;
+  margin-top: 6rem;
+}
+
+.eForm {
+  width: auto;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-skin);
+  display: flex;
+  flex-direction: column;
+  border-radius: 1.25rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.eTitre {
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: 4.875rem;
+  display: flex;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 4rem;
+  line-height: 4.875rem;
+  color: var(--color-brown);
+  margin-bottom: 2rem;
+}
+
+.eChampRenseignements {
+  display: flex;
+  max-width: 30rem;
+  width: 85%;
+  height: 4.063rem;
+  background: #ffffff;
+  border-radius: 1.25rem;
+  margin-bottom: 2rem;
+  justify-content: center;
+  align-items: center;
+  padding: 0.625rem 1.375rem;
+}
+
+.eChampRenseignements input {
+  width: 24.82rem;
+  height: auto;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.75rem;
+  line-height: 1.813rem;
+  color: var(--color-brown);
+  border: none;
+  outline: none;
+  border-radius: 0.2rem;
+}
+
+.eChampRenseignements i {
+  width: auto;
+  max-width: 30rem;
+  height: 1.75rem;
+  margin-left: 2.75rem;
+  margin-top: 2%;
+  font-family: "Font Awesome 5 Free";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 1.75rem;
+  line-height: 1.75rem;
+  color: red;
+}
+
+.eIconnes {
+  font-size: 2rem;
+  color: var(--color-dark-brown);
+  width: auto;
+  height: 1.75rem;
+  margin-left: 2.75rem;
+  font-family: "Font Awesome 5 Free";
+  font-style: normal;
+  font-weight: 900;
+  line-height: 1.75rem;
+}
+
+.eAll .create {
+  display: flex;
+  width: 100%;
+  height: 4.063rem;
+  background: var(--color-buff);
+  border-radius: 1.25rem;
+  margin-bottom: 1rem;
+  border: none;
+  outline: none;
+  justify-content: center;
+  color: var(--color-dark-brown);
+}
+
+.create p {
+  width: auto;
+  height: 1.75rem;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 1.75rem;
+  margin-top: 3%;
+}
+
+.eAll .create:hover {
+  cursor: pointer;
+  background-color: var(--color-dark-brown);
+  color: var(--color-skin);
+}
+
+/*    ================= MEDIAS (very small size) =======================    */
+
+@media (min-width: 360px) {
+  .eAll {
+    zoom: 20%;
+  }
+}
+
+/*    ================= MEDIAS (small size) =======================    */
+
+@media (min-width: 768px) {
+  .eAll {
+    zoom: 30%;
+  }
+}
+
+/*    ================= MEDIAS (medium size) =======================    */
+
+@media (min-width: 1024px) {
+  .eAll {
+    zoom: 50%;
+  }
+}
+
+/*    ================= MEDIAS (medium size) =======================    */
+
+@media (min-width: 1280px) {
+  .eAll {
+    zoom: 70%;
+  }
+}
