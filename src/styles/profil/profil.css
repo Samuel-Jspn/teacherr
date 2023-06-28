@@ -51,7 +51,7 @@ h2 {
 }
 
 .profile-buttons > .edit-link, .edit-btn {
-  display: block;
+  display: flex;
   justify-content: center;
   align-items: center;
   background: var(--color-buff);
@@ -60,7 +60,7 @@ h2 {
   border: none;
   outline: none;
   border-radius: 1.25rem;
-  margin-top: 0;
+  margin-top: 1rem;
   margin-bottom: 1rem;
   font-family: "Montserrat";
   font-weight: 900;
@@ -69,7 +69,7 @@ h2 {
   text-decoration: none;
 }
 
-.profile-buttons > .edit-btn:hover, .edit-link:hover {
+.edit-btn:hover {
   cursor: pointer;
   background: var(--color-dark-brown);
   transition: 0.5s;
@@ -105,6 +105,25 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.edit-link {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  background: var(--color-buff);
+  height: 5rem;
+  width: 12rem;
+  border: none;
+  outline: none;
+  border-radius: 1.25rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-family: "Montserrat";
+  font-weight: 900;
+  font-size: 1.5rem;
+  color: var(--color-dark-brown);
+  text-decoration: none;
 }
 
 /* History part */
