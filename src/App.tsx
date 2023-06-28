@@ -5,6 +5,7 @@ import Inscription from "./pages/inscription";
 import Accueil from "./pages/accueil";
 import Profil from "./pages/profil";
 import Mentions from "./pages/mentions";
+import Editprofil from "./pages/editprofil";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route path="/home" element={<Home />} />
           <Route path="/profil" element={<Profil />} />
           <Route path="/mentions" element={<Mentions />} />
+          <Route path="/editprofil" element={<Editprofil />} />
         </Routes>
       </div>
   );
