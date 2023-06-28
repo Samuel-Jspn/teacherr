@@ -1,26 +1,20 @@
 const express = require('express');
 const router = express.Router();
-const Data = require('../models/data_teacher');
+const User = require('../models/user');
 
-// Récupérer toutes les données
+// Récupérer toutes les données des utilisateurs
 router.get('/', (req, res) => {
-  Data.find()
-    .then((data) => res.json(data))
-    .catch((err) => res.status(500).json({ error: err }));
-});
-
-// Récupérer une donnée par ID
-router.get('/:id', (req, res) => {
-  Data.findById(req.params.id)
-    .then((data) => res.json(data))
-    .catch((err) => res.status(500).json({ error: err }));
-});
-
-// Mettre à jour une donnée par ID
-router.put('/:id', (req, res) => {
-  Data.findByIdAndUpdate(req.params.id, req.body, { new: true })
-    .then((data) => res.json(data))
-    .catch((err) => res.status(500).json({ error: err }));
+  User.findAll({
+    where: {
+      status: 'teacher' // Remplacez 'active' par le statut souhaité
+    }
+  })
+    .then((users) => {
+      res.json(users);
+    })
+    .catch((err) => {
+      res.status(500).json({ error: err });
+    });
 });
 
 module.exports = router;

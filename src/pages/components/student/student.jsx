@@ -7,7 +7,7 @@ const Student = ({ title, level, description }) => {
     const [data, setData] = useState([]);
 
     useEffect(() => {
-        axios.get('http://localhost:3000/api/mongoDataStudent',)
+        axios.get('http://localhost:3000/api/dataStudent',)
         .then((response) => {
             setData(response.data);
             console.log(data);
@@ -20,7 +20,7 @@ const Student = ({ title, level, description }) => {
     return (
         <>
         {data.map((item) => (
-        <div className='Sconteneur' key={item._id}>
+        <div className='Sconteneur' key={item.id}>
             <form action="" method="post" className="studentForm">
                 <div id="entete">
                     <h1 className="title_student">{item.nom} {item.prenom}</h1>

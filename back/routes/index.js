@@ -31,11 +31,11 @@ app.use(cors());
 app.use('/sensors', sensorRouter);
 app.use('/auth', authRoutes);
 
-const mongoDataRoutesTeacher = require('./teacherRoute');
-app.use('/api/mongoDataTeacher', mongoDataRoutesTeacher);
+const dataStudent = require('./studentRoute');
+app.use('/api/dataStudent', dataStudent);
 
-const mongoDataRoutesStudent = require('./studentRoute');
-app.use('/api/mongoDataStudent', mongoDataRoutesStudent);
+const dataTeacher = require('./teacherRoute');
+app.use('/api/dataTeacher', dataTeacher);
 
 const bodyParser = require('body-parser');
 app.use(bodyParser.json());
