@@ -18,12 +18,29 @@ const user = [
   },
 ];
 
-function profil() {
+function Profil() {
   // const togglePassword = () => {
   //   setPasswordShown(!passwordShown);
   // };
 
   // const [passwordShown, setPasswordShown] = useState(false);
+
+  const [text, setText] = useState("Texte statique du profil");
+  const [isEditing, setIsEditing] = useState(false);
+
+  const handleEditClick = () => {
+    setIsEditing(true);
+  };
+
+  const handleSaveClick = () => {
+    setIsEditing(false);
+    // Effectuez ici les actions nécessaires pour enregistrer le texte modifié
+  };
+
+  const handleChange = (event) => {
+    setText(event.target.value);
+  };
+
   return (
     <body id="profile">
       <div>
@@ -52,12 +69,23 @@ function profil() {
           <div className="levelPersonne">
             <h2>Bac +2</h2>
           </div>
-          <div className="decrptionPersonne">
-            <p>Un professeur de mathématiques est un enseignant spécialisé dans l'enseignement des concepts mathématiques aux élèves de différents niveaux scolaires. Leur rôle principal est de transmettre les connaissances mathématiques de manière claire et compréhensible, en aidant les élèves à développer une compréhension approfondie des concepts et des compétences mathématiques.</p>
-          </div>
-          <div className="profile-buttons">
-            <button class="edit-btn">Éditer</button>
-            <button class="delete-btn">Supprimer</button>
+          <div>
+            {isEditing ? (
+              <div>
+                <textarea rows="10" col="10" className="descriptionPersonne" type="text" value={text} onChange={handleChange} />
+                <div className="profile-buttons">
+                  <button class="edit-btn" onClick={handleSaveClick}>Enregistrer</button>
+                </div>
+              </div>
+            ) : (
+              <div>
+                <p className="descriptionPersonne">{text}</p>
+                <div className="profile-buttons">
+                  <button class="edit-btn" onClick={handleEditClick}>Éditer</button>
+                  <button class="delete-btn">Supprimer</button>
+                </div>
+              </div>
+            )}
           </div>
           {/* Ajouter div 2 boutons éditer et supprimer */}
         </div>
@@ -95,4 +123,4 @@ function profil() {
   );
 }
 
-export default profil;
+export default Profil;

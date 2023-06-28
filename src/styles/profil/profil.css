@@ -113,3 +113,16 @@ h2 {
   margin-top: 5em;
   width: 100%;
 }
+
+.descriptionPersonne {
+  width: 90%;
+  margin: 5%;
+  font-family: "Montserrat";
+  font-size: 1em;
+}
+
+textarea {
+  background: var(--color-light);
+  border: 1px solid white;
+  outline: none;
+}
