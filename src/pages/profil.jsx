@@ -64,7 +64,9 @@ function profil() {
             </p>
           </div>
           <div className="profile-buttons">
+            <Link class="edit-link" to="../editprofil">
             <button class="edit-btn">Éditer</button>
+            </Link>
             <button class="delete-btn">Supprimer</button>
           </div>
           {/* Ajouter div 2 boutons éditer et supprimer */}
