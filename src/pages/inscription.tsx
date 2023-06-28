@@ -130,7 +130,7 @@ export default function InscriptionPage() {
             <button type="submit" className="create">
               <p>Je crée mon compte</p>
             </button>
-            <Link to="/auth/login">
+            <Link to="/auth/login" className="redirect-register">
               <div className="registration">
                 Déjà membre de la plateforme ? C'est par ici !
               </div>

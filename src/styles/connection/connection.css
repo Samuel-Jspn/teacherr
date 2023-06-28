@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;500&display=swap");
 
+#ConnectionPage {
+  font-family: "Montserrat";
+}
+
 .cAll {
   display: flex;
   justify-content: center;
@@ -15,6 +19,8 @@
   display: flex;
   flex-direction: column;
   border-radius: 1.25rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .cTitre {
@@ -75,48 +81,32 @@
 
 .connection {
   display: flex;
-  width: 95%;
+  width: 100%;
   height: 4.063rem;
   background: var(--color-buff);
   border-radius: 1.25rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   border: none;
   outline: none;
-  border-radius: 1.25rem;
+  justify-content: center;
+  color: var(--color-dark-brown);
 }
 
-.connection:hover {
-  cursor: pointer;
-}
-
-.connexion {
-  display: flex;
-  margin-top: 3%;
-  margin-left: 28.2%;
-}
-
-.connexion p {
+.connection p {
   width: auto;
   height: 1.75rem;
   font-family: "Montserrat";
   font-style: normal;
-  font-weight: 900;
-  font-size: 1.5rem;
-  line-height: 1.75rem;
-  color: var(--color-dark-brown);
-  margin-top: 0%;
-}
-
-.connexion i {
-  width: 1.5rem;
-  height: 1.75rem;
-  font-family: "Font Awesome 5 Free";
-  font-style: normal;
-  font-weight: 900;
+  font-weight: 500;
   font-size: 2rem;
   line-height: 1.75rem;
-  color: #fff;
-  margin-left: 1rem;
+  margin-top: 3%;
+}
+
+.connection:hover {
+  cursor: pointer;
+  background-color: var(--color-dark-brown);
+  color: var(--color-skin);
 }
 
 .all .registration {
@@ -143,15 +133,41 @@
   line-height: 1.75rem;
 }
 
+.redirect-connection {
+  text-decoration: none;
+  margin-bottom: 0.7rem;
+  width: 30rem;
+}
+
+.cAll .cRegistration {
+  display: flex;
+  width: 100%;
+  height: 1.5rem;
+  justify-content: center;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  color: var(--color-buff);
+}
+
+.cAll .cRegistration:hover {
+  align-content: center;
+  color: var(--color-skin);
+}
+
+.redirect-connection:hover {
+  background-color: var(--color-buff);
+  color: var(--color-skin);
+  border-radius: 0.8rem;
+}
+
 /*    ================= MEDIAS (very small size) =======================    */
 
 @media (min-width: 360px) {
   .cAll {
     zoom: 50%;
-  }
-
-  .inscription {
-    font-size: 25px;
   }
 }
 

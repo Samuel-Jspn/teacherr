@@ -55,12 +55,12 @@ export default function ConnectionPage() {
             <FaLock className="cIconnes" />
           </div>
           <button type="submit" className="connection">
-            <div className="connexion">
+            {/* <div className="connexion"> */}
               <p>Je me connecte</p>
-            </div>
+            {/* </div> */}
           </button>
-          <Link to="/auth/register">
-            <div className="inscription">
+          <Link to="/auth/register" className="redirect-connection">
+            <div className="cRegistration">
               Nouveau sur la plateforme ? C'est par ici !
             </div>
           </Link>
