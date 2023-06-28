@@ -9,7 +9,7 @@ const Teacher = ({ title, level, description }) => {
     const [data, setData] = useState([]);
 
     useEffect(() => {
-        axios.get('http://localhost:3000/api/mongoDataTeacher',)
+        axios.get('http://localhost:3000/api/dataTeacher',)
         .then((response) => {
             setData(response.data);
             console.log(data);
@@ -22,11 +22,10 @@ const Teacher = ({ title, level, description }) => {
     return (
         <>
         {data.map((item) => (
-        <div className='conteneur' key={item._id}>
+        <div className='conteneur' key={item.id}>
             <form action="" method="post" className="teacherForm">
                 <div id="entete">
-                    <img className="profile-picture" src={item.image}/>
-                    <script>console.log(item.image)</script>
+                    <img className="profile-picture" src={item.photo}/>
                     <h1 className="title_teacher">Professeur en {item.subject}</h1>
                 </div>
                 <div className='block'>
