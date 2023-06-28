@@ -50,10 +50,11 @@ const User = sequelize.define('User', {
     photo: {
       type: DataTypes.STRING,
   },
-  /*token: {
-    type: DataTypes.STRING, // ou tout autre type approprié pour le jeton d'authentification
-    allowNull: true, // permettant à la valeur d'être nulle lorsqu'il n'y a pas de jeton
-  },*/
+    status: {
+      type: DataTypes.STRING,
+      allowNull: false,
+      unique: true,
+  }
 });
 
 module.exports = User;

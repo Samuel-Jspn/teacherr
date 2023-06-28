@@ -1,4 +1,4 @@
-.block {
+.Tblock {
   margin: 10px;
 }
 
@@ -9,26 +9,13 @@
   color: var(--color-dark-brown);
 }
 
-@media (min-width: 768px) {
-  .title_teacher {
-    font-size: 30px;
-  }
-}
-
-.block > div > div {
+.Tblock > div > div {
   margin: 5px;
   font-size: 15px;
   color: var(--color-dark-brown);
 }
 
-@media (min-width: 768px) {
-  .block > div > div {
-    margin: 10px;
-    font-size: 20px;
-  }
-}
-
-.info-description {
+.Tinfo-description {
   text-align: justify;
   color: var(--color-dark-brown);
   width: 90%;
@@ -36,20 +23,12 @@
   margin: 5px;
 }
 
-@media (min-width: 768px) {
-  .info-description {
-    width: 95%;
-    font-size: 18px;
-    margin: 10px;
-  }
-}
-
-.button-container {
+.Tbutton-container {
   display: flex;
   justify-content: end;
 }
 
-.button {
+.Tbutton {
   border: none;
   background: none;
   font-family: "Montserrat", sans-serif;
@@ -60,31 +39,23 @@
   margin-top: 2%;
   background-color: var(--color-buff);
   border-radius: 15px;
-  padding: 10px;
+  padding: 0;
 }
 
-.button:hover {
+.Tbutton:hover {
   background-color: var(--color-dark-brown);
   color: var(--color-skin);
   transition: 0.5s;
-  cursor: pointer;  
+  cursor: pointer;
 }
 
-@media (min-width: 768px) {
-  .button {
-    font-size: 20px;
-    margin-top: 1%;
-  }
-}
-
-.conteneur {
+.Tconteneur {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 95%;
   height: auto;
   margin: 2.5%;
-  
 }
 
 .teacherForm {
@@ -93,7 +64,7 @@
   min-width: 100%;
 }
 
-.profile-picture {
+.Tprofile-picture {
   height: 60px;
   width: 60px;
   border-radius: 50%;
@@ -104,4 +75,26 @@
   display: flex;
   align-items: center; /* Alignement vertical */
   margin: 5px;
+}
+
+@media (min-width: 768px) {
+  .title_teacher {
+    font-size: 30px;
+  }
+
+  .Tblock > div > div {
+    margin: 10px;
+    font-size: 20px;
+  }
+
+  .Tinfo-description {
+    width: 95%;
+    font-size: 18px;
+    margin: 10px;
+  }
+
+  .Tbutton {
+    font-size: 20px;
+    margin-top: 1%;
+  }
 }

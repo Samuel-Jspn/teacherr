@@ -1,12 +1,11 @@
 import React, { useState, useEffect } from "react";
 import "./teacher.css";
 import anonymous from "../../assets/anonymous.jpg";
-
-import axios from 'axios';
-
+import Popups from "../Popup/Popups.jsx";
+import axios from "axios";
 
 const Teacher = ({ title, level, description }) => {
-    const [data, setData] = useState([]);
+  const [data, setData] = useState([]);
 
     useEffect(() => {
         axios.get('http://localhost:3000/api/dataTeacher',)
@@ -22,19 +21,19 @@ const Teacher = ({ title, level, description }) => {
     return (
         <>
         {data.map((item) => (
-        <div className='conteneur' key={item.id}>
+        <div className='Tconteneur' key={item.id}>
             <form action="" method="post" className="teacherForm">
                 <div id="entete">
-                    <img className="profile-picture" src={item.photo}/>
+                    <img className="Tprofile-picture" src={item.photo}/>
                     <h1 className="title_teacher">Professeur en {item.subject}</h1>
                 </div>
-                <div className='block'>
-                    <div className="infos">
+                <div className='Tblock'>
+                    <div className="Tinfos">
                         <div>{item.level}</div>
-                        <p className="info-description">{item.description}</p>
+                        <p className="Tinfo-description">{item.description}</p>
                     </div>
-                    <div className="button-container">
-                        <button className="button">
+                    <div className="Tbutton-container">
+                        <button className="Tbutton">
                             Prendre rdv
                         </button>
                     </div>
@@ -43,7 +42,7 @@ const Teacher = ({ title, level, description }) => {
         </div>  
         ))}
     </>
-    );
+  );
 };
 
 export default Teacher;

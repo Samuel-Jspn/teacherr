@@ -1,34 +1,21 @@
-.block {
+.Sblock {
   margin: 0.625rem;
 }
 
-.title_teacher {
+.title_student {
   font-size: 20px;
   font-weight: normal;
   padding: 1%;
   color: var(--color-dark-brown);
 }
 
-@media (min-width: 768px) {
-  .title_teacher {
-    font-size: 30px;
-  }
-}
-
-.block > div > div {
+.Sblock > div > div {
   margin: 0.313rem;
   font-size: 15px;
   color: var(--color-dark-brown);
 }
 
-@media (min-width: 768px) {
-  .block > div > div {
-    margin: 0.625rem;
-    font-size: 20px;
-  }
-}
-
-.info-description {
+.Sinfo-description {
   text-align: justify;
   color: var(--color-dark-brown);
   width: 90%;
@@ -36,20 +23,12 @@
   margin: 0.313rem;
 }
 
-@media (min-width: 768px) {
-  .info-description {
-    width: 95%;
-    font-size: 18px;
-    margin: 0.625rem;
-  }
-}
-
-.button-container {
+.Sbutton-container {
   display: flex;
-  justify-content: end; 
+  justify-content: end;
 }
 
-.button {
+.Sbutton {
   border: none;
   background: none;
   font-family: "Montserrat", sans-serif;
@@ -63,37 +42,29 @@
   padding: 0.625rem;
 }
 
-.button:hover {
+.Sbutton:hover {
   background-color: var(--color-dark-brown);
   color: var(--color-skin);
   transition: 0.5s;
-  cursor: pointer;  
+  cursor: pointer;
 }
 
-@media (min-width: 768px) {
-  .button {
-    font-size: 20px;
-    margin-top: 1%;
-  }
-}
-
-.conteneur {
+.Sconteneur {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 95%;
   height: auto;
   margin: 2.5%;
-  
 }
 
-.teacherForm {
+.studentForm {
   background-color: var(--color-skin);
   border-radius: 15px;
   min-width: 100%;
 }
 
-.profile-picture {
+.Sprofile-picture {
   height: 3.75rem;
   border-radius: 50%;
   margin: 2%;
@@ -103,4 +74,26 @@
   display: flex;
   align-items: center; /* Alignement vertical */
   margin: 0.313rem;
+}
+
+@media (min-width: 768px) {
+  .title_student {
+    font-size: 30px;
+  }
+
+  .Sinfo-description {
+    width: 95%;
+    font-size: 18px;
+    margin: 0.625rem;
+  }
+
+  .Sbutton {
+    font-size: 20px;
+    margin-top: 1%;
+  }
+
+  .Sblock > div > div {
+    margin: 0.625rem;
+    font-size: 20px;
+  }
 }

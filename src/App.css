@@ -8,6 +8,7 @@
   --color-buff: #d4a373;
   --color-brown: #8b4513;
   --color-dark-brown: #463f3a;
+  --color-warning: #ef233c;
 }
 
 html {
@@ -21,12 +22,6 @@ html {
 .App-logo {
   height: 40vmin;
   pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
 }
 
 .App-header {

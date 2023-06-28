@@ -1,0 +1,212 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat: 900, 400, 700, 600, 500, 900italic");
+
+#profile {
+  display: grid;
+  grid-template-columns: 5% 43% 4% 43% 5%;
+}
+
+#profile h1,
+h2 {
+  color: var(--color-dark-brown);
+  font-family: Montserrat;
+}
+
+.profile-infos {
+  grid-column: 2;
+  margin-top: 5em;
+  width: 100%;
+}
+
+.profile-component {
+  background-color: var(--color-skin);
+  border-radius: 15px;
+  color: var(--color-dark-brown);
+  padding-bottom: 15px;
+  text-align: center;
+}
+
+.profile-images {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.profile-picture {
+  height: 150px;
+  border-radius: 50%;
+}
+
+.password .psw {
+  background-color: transparent;
+  pointer-events: none;
+  border: none;
+  text-align: center;
+}
+
+.profile-buttons {
+  max-height: 2%;
+  display: flex;
+  gap: 3rem;
+  justify-content: center;
+}
+
+.profile-buttons > .edit-link, .edit-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--color-buff);
+  height: 5rem;
+  width: 12rem;
+  border: none;
+  outline: none;
+  border-radius: 1.25rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-family: "Montserrat";
+  font-weight: 900;
+  font-size: 1.5rem;
+  color: var(--color-dark-brown);
+  text-decoration: none;
+}
+
+.edit-btn:hover {
+  cursor: pointer;
+  background: var(--color-dark-brown);
+  transition: 0.5s;
+  color: var(--color-skin);
+}
+
+.profile-buttons > .delete-btn {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  background: var(--color-skin);
+  height: 5rem;
+  width: 12rem;
+  border: none;
+  outline: none;
+  border-radius: 1.25rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-family: "Montserrat";
+  font-weight: 900;
+  font-size: 1.5rem;
+  color: var(--color-warning);
+}
+
+.profile-buttons > .delete-btn:hover {
+  cursor: pointer;
+  color: var(--color-light);
+  background: var(--color-warning);
+  transition: 0.3s;
+}
+
+.edit-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.edit-link {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  background: var(--color-buff);
+  height: 5rem;
+  width: 12rem;
+  border: none;
+  outline: none;
+  border-radius: 1.25rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-family: "Montserrat";
+  font-weight: 900;
+  font-size: 1.5rem;
+  color: var(--color-dark-brown);
+  text-decoration: none;
+}
+
+/* History part */
+
+.profile-history {
+  grid-column: 4;
+  margin-top: 5em;
+  width: 100%;
+}
+
+/*    ================= MEDIAS (very small size) =======================    */
+
+@media (min-width: 360px) {
+  #profile {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+  }
+
+  .profile-buttons {
+    gap: 0.8rem;
+  }
+
+  .profile-component {
+    width: 100%;
+  }
+
+  .profile-history {
+    margin: 0 0.5rem;
+  }
+
+  .profile-infos {
+    margin: 45rem 0.5rem 0 0.5rem;
+  }
+}
+
+/*    ================= MEDIAS (small size) =======================    */
+
+@media (min-width: 768px) {
+  .profile-buttons {
+    gap: 1rem;
+  }
+
+  .profile-component {
+    width: auto;
+    margin-right: 0.5rem;
+  }
+
+  .profile-infos {
+    margin: 55rem 0.5rem 0 0.5rem;
+    width: 100%;
+  }
+}
+
+/*    ================= MEDIAS (medium size) =======================    */
+
+@media (min-width: 1024px) {
+  #profile {
+    display: grid;
+    grid-template-columns: 2% 46% 4% 46% 2%;
+  }
+
+  .profile-infos {
+    margin-top: 0;
+  }
+
+  .profile-buttons {
+    margin: 0.5rem;
+  }
+}
+
+/*    ================= MEDIAS (medium size) =======================    */
+
+@media (min-width: 1280px) {
+  #profile {
+    display: grid;
+    grid-template-columns: 5% 40% 10% 40% 5%;
+  }
+
+  .profile-history {
+    margin-top: 15rem;
+  }
+}

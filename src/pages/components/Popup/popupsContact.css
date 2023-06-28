@@ -1,0 +1,25 @@
+.btn-popup-contact {
+  border: none;
+  width: 100%;
+  background: none;
+  font-family: "Montserrat", sans-serif;
+  color: var(--color-dark-brown);
+  font-size: 15px;
+  background-color: var(--color-buff);
+  border-radius: 15px;
+  /* padding: 10px; */
+}
+
+.btn-popup-contact:hover {
+  background-color: var(--color-dark-brown);
+  color: var(--color-skin);
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .btn-popup-contact {
+    font-size: 20px;
+    margin-top: 1%;
+  }
+}
