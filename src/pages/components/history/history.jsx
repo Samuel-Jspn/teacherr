@@ -1,5 +1,6 @@
 import React from "react";
 import "./history.css";
+import PopupsContact from "../Popup/PopupsContact.jsx";
 
 const History = ({ title, level, description, date }) => {
   return (
@@ -15,7 +16,9 @@ const History = ({ title, level, description, date }) => {
             <p className="info-description">Date : {date}</p>
           </div>
           <div className="h-button-container">
-            <button className="h-button-access">Accéder</button>
+            <button className="h-button-access">
+              <PopupsContact />
+            </button>
             <button className="h-button-delete">Supprimer</button>
           </div>
         </div>

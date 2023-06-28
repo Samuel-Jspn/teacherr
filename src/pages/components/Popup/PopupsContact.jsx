@@ -1,6 +1,7 @@
-import React, { useState } from 'react';
-import Popup from './Popup';
-import "./popup.css";
+import React, { useState } from "react";
+import Popup from "./Popup";
+import "./popupsContact.css";
+import RatingForm from "../Note/note.jsx";
 
 const PopupsContact = () => {
   const [isPopupOpen, setPopupOpen] = useState(false);
@@ -15,10 +16,12 @@ const PopupsContact = () => {
 
   return (
     <div>
-      <button className='btn-popup' onClick={handleOpenPopup}>Prendre rdv</button>
+      <button className="btn-popup-contact" onClick={handleOpenPopup}>
+        Accéder
+      </button>
       {isPopupOpen && (
         <Popup onClose={handleClosePopup}>
-          tu met ce que tu veux dans la popup ici
+          <RatingForm />
         </Popup>
       )}
     </div>

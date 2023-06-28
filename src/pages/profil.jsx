@@ -48,13 +48,20 @@ function profil() {
             <input type="password" className="psw" value={password} />
           </div>
           <div className="titlePersonne">
-            <h2>Professeur de maths</h2>                
+            <h2>Professeur de maths</h2>
           </div>
           <div className="levelPersonne">
             <h2>Bac +2</h2>
           </div>
           <div className="decrptionPersonne">
-            <p>Un professeur de mathématiques est un enseignant spécialisé dans l'enseignement des concepts mathématiques aux élèves de différents niveaux scolaires. Leur rôle principal est de transmettre les connaissances mathématiques de manière claire et compréhensible, en aidant les élèves à développer une compréhension approfondie des concepts et des compétences mathématiques.</p>
+            <p>
+              Un professeur de mathématiques est un enseignant spécialisé dans
+              l'enseignement des concepts mathématiques aux élèves de différents
+              niveaux scolaires. Leur rôle principal est de transmettre les
+              connaissances mathématiques de manière claire et compréhensible,
+              en aidant les élèves à développer une compréhension approfondie
+              des concepts et des compétences mathématiques.
+            </p>
           </div>
           <div className="profile-buttons">
             <button class="edit-btn">Éditer</button>
