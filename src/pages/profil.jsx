@@ -6,20 +6,37 @@ import user1 from "./assets/user1.png";
 import Navbar from "./components/navbar/navbar.jsx";
 import History from "./components/history/history.jsx";
 import Footer from "./components/footer/footer.jsx";
+import axios from "axios";
 
-const password = "MotdepasseTest123";
-
+export default function Profil() {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const handleDelete = () => {
+    const confirmed = window.confirm('Êtes-vous sûr de vouloir supprimer cet élément ?');
+  
+    if (confirmed) {
+      // Envoyer la requête DELETE
+      const token = localStorage.getItem('token');
+      axios.post('http://localhost:3000/modif/delete/:userId')
+        .then(response => {
+          // Gérer la réponse de succès
+        })
+        .catch(error => {
+          // Gérer l'erreur
+        });
+    } else {
+      // Annuler la suppression
+    }
+  };
 const user = [
   {
     firstName: "Gérard",
     lastName: "Bertrand",
-    email: "feur.feur@feur.fr",
-    password: "MotdepasseTest123",
+    email: "blabla@orange.fr",
+    password: "blabla",
     image: { anonymous },
   },
 ];
-
-function profil() {
   // const togglePassword = () => {
   //   setPasswordShown(!passwordShown);
   // };
@@ -31,6 +48,7 @@ function profil() {
         <Navbar />
       </div>
       <section className="profile-infos">
+      <form name = 'formo' onSubmit={handleDelete} className="cForme" >
         <h1>Profil Utilisateur</h1>
         <div className="profile-component">
           <div>
@@ -41,7 +59,7 @@ function profil() {
           <h1>Gérard BERTRAND</h1>
           <div className="email">
             <h1>Adresse Mail</h1>
-            <p>feur.feur@feur.fr</p>
+            <p>blabla@orange.fr</p>
           </div>
           <div className="password">
             <h1>Mot de Passe</h1>
@@ -58,10 +76,11 @@ function profil() {
           </div>
           <div className="profile-buttons">
             <button class="edit-btn">Éditer</button>
-            <button class="delete-btn">Supprimer</button>
+            <button type = "btnsubmit" onClick={handleDelete} class="delete-btn">Supprimer</button>
           </div>
           {/* Ajouter div 2 boutons éditer et supprimer */}
         </div>
+      </form>
       </section>
       <section className="profile-history">
         <h1>Historique</h1>
@@ -95,5 +114,3 @@ function profil() {
     </body>
   );
 }
-
-export default profil;

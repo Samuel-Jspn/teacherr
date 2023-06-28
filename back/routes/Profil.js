@@ -39,23 +39,20 @@ router.put('/profil', authMiddleware, async (req, res) => {
 
 
 // Suppression d'un utilisateur
-router.delete('/delete/:userId', async (req, res) => {
+router.delete('/delete/:userId', authMiddleware, async (req, res) => {
   const userId = req.params.userId;
 
   try {
-    // Vérifier si l'utilisateur existe
-    const user = await User.findByPk(userId);
-    if (!user) {
-      return res.status(404).json({ message: 'Utilisateur non trouvé' });
+    // Supprimer l'utilisateur de la base de données en utilisant l'ID
+    const deletedUser = await User.destroy({ where: { id: userId } });
+
+    if (deletedUser) {
+      res.status(200).json({ message: 'Utilisateur supprimé avec succès' });
+    } else {
+      res.status(404).json({ message: 'Utilisateur non trouvé' });
     }
-
-    // Supprimer l'utilisateur
-    await user.destroy();
-
-    res.status(200).json({ message: 'Utilisateur supprimé avec succès' });
   } catch (error) {
-    console.error(error);
-    res.status(500).json({ message: 'Une erreur sest produite lors de la suppression de lutilisateur' });
+    res.status(500).json({ message: 'Erreur lors de la suppression de l\'utilisateur' });
   }
 });
 

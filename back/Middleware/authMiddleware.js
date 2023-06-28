@@ -1,25 +1,20 @@
 const jwt = require('jsonwebtoken');
 
-const authMiddleware = (req, res, next) => {
-  const token = req.header('Authorization');
+function authMiddleware(req, res, next) {
+  const token = req.headers.authorization;
 
-  // Vérifiez si le token est présent
   if (!token) {
-    return res.status(401).json({ message: 'Unauthorized' });
+    return res.status(401).json({ message: 'Jeton d\'authentification manquant' });
   }
 
-  try {
-    // Vérifiez la validité du token
-    const decoded = jwt.verify(token, 'your-secret-key');
-
-    // Ajoutez les informations utilisateur décodées à la requête pour une utilisation ultérieure
-    req.user = decoded;
-
+  // Vérifier et décoder le jeton
+  jwt.verify(token, 'your-secret-key', (err, decoded) => {
+    if (err) {
+      return res.status(403).json({ message: 'Jeton d\'authentification invalide' });
+    }
+    req.userId = decoded.userId; // Ajouter l'ID de l'utilisateur à la demande
     next();
-  } catch (error) {
-    console.error(error);
-    res.status(401).json({ message: 'Invalid token' });
-  }
-};
+  });
+}
 
 module.exports = authMiddleware;
