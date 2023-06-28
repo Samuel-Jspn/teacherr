@@ -30,7 +30,6 @@
   line-height: 4.875rem;
   color: var(--color-brown);
   margin-bottom: 2rem;
-  
 }
 
 .cChampRenseignements {
@@ -142,4 +141,40 @@
   font-style: normal;
   font-weight: 900;
   line-height: 1.75rem;
+}
+
+/*    ================= MEDIAS (very small size) =======================    */
+
+@media (min-width: 360px) {
+  .cAll {
+    zoom: 50%;
+  }
+
+  .inscription {
+    font-size: 25px;
+  }
+}
+
+/*    ================= MEDIAS (small size) =======================    */
+
+@media (min-width: 768px) {
+  .cAll {
+    zoom: 60%;
+  }
+}
+
+/*    ================= MEDIAS (medium size) =======================    */
+
+@media (min-width: 1024px) {
+  .cAll {
+    zoom: 80%;
+  }
+}
+
+/*    ================= MEDIAS (medium size) =======================    */
+
+@media (min-width: 1280px) {
+  .cAll {
+    zoom: 100%;
+  }
 }
