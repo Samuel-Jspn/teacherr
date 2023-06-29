@@ -50,7 +50,8 @@ h2 {
   justify-content: center;
 }
 
-.profile-buttons > .edit-link, .edit-btn {
+.profile-buttons > .edit-link,
+.edit-btn {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -159,7 +160,7 @@ h2 {
   }
 
   .profile-infos {
-    margin: 45rem 0.5rem 0 0.5rem;
+    margin: 57rem 0.5rem 0 0.5rem;
   }
 }
 
@@ -176,7 +177,7 @@ h2 {
   }
 
   .profile-infos {
-    margin: 55rem 0.5rem 0 0.5rem;
+    margin: 70rem 0.5rem 0 0.5rem;
     width: 100%;
   }
 }
@@ -190,7 +191,11 @@ h2 {
   }
 
   .profile-infos {
-    margin-top: 0;
+    margin-top: 10rem;
+  }
+
+  .profile-history {
+    margin-top: 20rem;
   }
 
   .profile-buttons {
@@ -198,7 +203,7 @@ h2 {
   }
 }
 
-/*    ================= MEDIAS (medium size) =======================    */
+/*    ================= MEDIAS (big size) =======================    */
 
 @media (min-width: 1280px) {
   #profile {
@@ -207,6 +212,6 @@ h2 {
   }
 
   .profile-history {
-    margin-top: 15rem;
+    margin-top: 20rem;
   }
 }
