@@ -27,32 +27,31 @@ const User = sequelize.define('User', {
   },
     createdAt: {
       type: DataTypes.DATE, 
-      allowNull: false,
+      allowNull: true,
   },
     UpdatedAt: {
       type: DataTypes.DATE, 
-      allowNull: false,
-  },
-    status: {
-    type: DataTypes.STRING,   
-    allowNull: false,
-    unique: true,
+      allowNull: true,
   },
     description: {
       type: DataTypes.STRING,
+      allowNull: true,
   },
     level: {
       type: DataTypes.STRING,
+      allowNull: true,
   },
     subject: {
       type: DataTypes.STRING,
+      allowNull: true,
   },
     photo: {
       type: DataTypes.STRING,
+      allowNull: true,
   },
     status: {
       type: DataTypes.STRING,
-      allowNull: false,
+      allowNull: true,
       unique: true,
   }
 });

@@ -12,7 +12,9 @@ export default function ConnectionPage() {
 
   const handleRegistration = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-
+      var mail = document.getElementById("mail")!.ariaValueText;
+  
+      localStorage.setItem("Full_email", email)
     // Envoie des données d'enregistrement au backend
     axios
       .post("http://localhost:3000/auth/login", { email, password })
@@ -35,6 +37,7 @@ export default function ConnectionPage() {
           <h1 className="cTitre">Connexion</h1>
           <div className="cChampRenseignements">
             <input
+              id = "mail"
               type="email"
               placeholder="Adresse email"
               value={email}

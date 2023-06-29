@@ -56,6 +56,8 @@ router.post('/login', async (req, res) => {
     res.status(500).json({ message: 'Failed to authenticate' });
     console.log(error); 
   }
+
+
 });
 
 
